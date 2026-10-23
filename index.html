@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hi-Choppla — Hmong Goods</title>
+<style>
+:root{--red:#b3202a;--ink:#14213d;--gold:#e9b20e;--green:#2d6a4f;--bg:#faf6ef}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:#222}
+header{background:var(--ink);color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+header b{font-size:24px;letter-spacing:3px}header nav a{color:var(--gold);margin-left:16px;text-decoration:none}
+.stripe{height:8px;background:repeating-linear-gradient(90deg,var(--red) 0 20px,var(--gold) 20px 30px,var(--green) 30px 50px,var(--ink) 50px 60px)}
+.hero{text-align:center;padding:40px 20px}.hero h1{margin:0 0 8px;font-size:34px;color:var(--ink)}
+.banner{background:var(--gold);text-align:center;padding:8px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:1100px;margin:0 auto;padding:20px}
+.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px #0001}
+.card img{width:100%;aspect-ratio:1;object-fit:cover;display:block}.card .b{padding:18px}
+.price{color:var(--red);font-size:22px;font-weight:700}.tag{display:inline-block;background:var(--green);color:#fff;font-size:12px;padding:3px 8px;border-radius:99px}
+ul{padding-left:18px;line-height:1.5}
+form{display:flex;gap:8px;margin-top:12px}input{flex:1;padding:10px;border:1px solid #ccc;border-radius:8px}
+button{background:var(--red);color:#fff;border:0;padding:10px 16px;border-radius:8px;font-weight:600;cursor:pointer}
+.ok{color:var(--green);font-weight:600;display:none;margin-top:8px}
+footer{text-align:center;padding:30px;color:#666;font-size:13px}
+</style></head><body>
+<div class="banner">Preview store: pre-orders open soon. No payments are taken on this site.</div>
+<header><b>HI-CHOPPLA</b><nav><a href="#ball">Pov Pob</a><a href="#book">Kun-Yuh Book</a></nav></header><div class="stripe"></div>
+<section class="hero"><h1>Hmong goods, made to play and pass on</h1><p>Paj ntaub patterns on things families actually use.</p></section>
+<section class="grid">
+<article class="card" id="ball"><img src="img/povpob.jpg" alt="Hi-Choppla pov pob ball with Hmong paj ntaub pattern panels">
+<div class="b"><span class="tag">Coming soon · Pre-order</span><h2>Hi-Choppla Pov Pob Ball</h2><div class="price">$16.00</div>
+<p>A New Year ball-tossing ball made like a cornhole bag. It's soft and filled with pellets, so it lands with a thud and won't bounce or roll away into the crowd.</p>
+<ul><li>About 7.5 cm (3 in) round, sewn from panels</li><li>About 130 g, with washable poly-resin pellet fill</li><li>Cover is duck canvas or faux suede, printed with paj ntaub designs</li><li>Pairs: buy 2 and save, so you can toss with a partner</li></ul>
+<form onsubmit="return n(this)"><input type="email" required placeholder="Email me when pre-orders open"><button>Notify me</button></form><div class="ok">Thanks! You're on the list (preview only).</div></div></article>
+<article class="card" id="book"><img src="img/book.jpg" alt="Kun-Yuh sticker book cover">
+<div class="b"><span class="tag">Coming soon · Pre-order</span><h2>Kun-Yuh Sticker Book</h2><div class="price">$14.99</div>
+<p>A 22-page Hmong culture sticker book with 8 illustrated scenes, 96 labeled stickers and a glossary of Hmong words for kids and families.</p>
+<img src="img/stickers.jpg" alt="Sample sticker sheet" style="border-radius:8px;margin:8px 0">
+<form onsubmit="return n(this)"><input type="email" required placeholder="Email me when pre-orders open"><button>Notify me</button></form><div class="ok">Thanks! You're on the list (preview only).</div></div></article>
+</section>
+<footer>© 2026 Hi-Choppla · A SIVYIS brand · Akron, Ohio<br>Product images are concept renders. Final products may differ.</footer>
+<script>function n(f){f.nextElementSibling.style.display='block';f.reset();return false}</script>
+</body></html>
