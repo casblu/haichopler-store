@@ -1,5 +1,5 @@
 # Hi-Choppla product tracker
-Updated: 2026-10-26 20:40 EDT (America/New_York) · Owner: Armuro + Hi-Choppla bot · Design gate: Txai
+Updated: 2026-10-26 21:40 EDT (America/New_York) · Owner: Armuro + Hi-Choppla bot · Design gate: Txai
 
 | Product | Status | Next ops step (no design needed) | Blocked on Txai (design/spend) |
 |---|---|---|---|
@@ -12,13 +12,15 @@ Updated: 2026-10-26 20:40 EDT (America/New_York) · Owner: Armuro + Hi-Choppla b
 | Christmas sweaters/sweatshirts | Coming soon · Found Surface draft RFQ ready | Txai approve Found Surface send / Studio account (`RFQ-FOUND-SURFACE-XMAS.md`) | Jacquard / embroidery art |
 | Story scarves (store: shared **Scarves** card) | Coming soon · shared scarf RFQ ready | Txai approve partner pick + send (`RFQ-SCARVES.md`) | Story art + layout |
 | Family-tree scarves (store: shared **Scarves** card) | Coming soon · same RFQ as story | Same as story scarves (`RFQ-SCARVES.md`) | Family-tree visual system |
+| Hmong textile skirts | Coming soon · US shortlist + draft RFQ ready | Txai pick silhouette/maker + approve send (`RFQ-TEXTILE-SKIRTS.md`) | Silhouette, length, motif accuracy, pricing |
+| Women’s beanies (purple + B&W wrap stripe) | Coming soon · US shortlist + draft RFQ ready | Txai cultural/accuracy lock + maker pick (`RFQ-WOMENS-BEANIES.md`) | Stripe placement, purple shade, cuff, pricing; not ceremonial replica |
 
 Store: https://casblu.github.io/hi-choppla-store/  
-Store shows one **Scarves** card covering both story and family-tree scarves (tracked as two lineup items here).  
+Store shows **ten** product cards (story + family-tree share one **Scarves** card).  
 Rules: advance ops freely; never finalize aesthetics or spend without Txai.  
 **Hard rule:** no emails, forms, calls, or DMs to makers — research + draft files only until Txai says send.
 
 Draft pack (local):  
-`RFQ-FOUND-SURFACE-XMAS.md` · `RFQ-TUBE-SOCKS.md` · `RFQ-SCARVES.md` · `ORNAMENTS-BOWL-SKATE.md` · `STICKER-BOOK-PRINT.md`
+`RFQ-FOUND-SURFACE-XMAS.md` · `RFQ-TUBE-SOCKS.md` · `RFQ-SCARVES.md` · `RFQ-TEXTILE-SKIRTS.md` · `RFQ-WOMENS-BEANIES.md` · `ORNAMENTS-BOWL-SKATE.md` · `STICKER-BOOK-PRINT.md`
 
-**Store photos (2026-10-26):** Pulled from Txai’s Drive / local design mirrors — sticker book cover (`01-Cover.pdf`), clothing sticker sheet (`08-…Stickers.pdf`), BawPaw 6-panel jade mockup, skate deck1 SVG, paj ntaub textures for ornaments/scarves/socks/christmas refs. Bronze funeral bowl still SVG placeholder (no bowl photo in Drive). Not final sample photography.
+**Store photos (2026-10-26):** Pulled from Txai’s Drive / local design mirrors — sticker book cover, clothing sticker sheet, BawPaw mockup, skate deck art, paj ntaub textures for ornaments/scarves/socks/christmas/skirts refs. Bronze funeral bowl + women’s beanies use SVG pattern placeholders (no finished photos in Drive). Not final sample photography.
