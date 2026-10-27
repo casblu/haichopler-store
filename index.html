@@ -1,38 +1,407 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hi-Choppla — Hmong Goods</title>
-<style>
-:root{--red:#b3202a;--ink:#14213d;--gold:#e9b20e;--green:#2d6a4f;--bg:#faf6ef}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:#222}
-header{background:var(--ink);color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
-header b{font-size:24px;letter-spacing:3px}header nav a{color:var(--gold);margin-left:16px;text-decoration:none}
-.stripe{height:8px;background:repeating-linear-gradient(90deg,var(--red) 0 20px,var(--gold) 20px 30px,var(--green) 30px 50px,var(--ink) 50px 60px)}
-.hero{text-align:center;padding:40px 20px}.hero h1{margin:0 0 8px;font-size:34px;color:var(--ink)}
-.banner{background:var(--gold);text-align:center;padding:8px;font-weight:600}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:1100px;margin:0 auto;padding:20px}
-.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px #0001}
-.card img{width:100%;aspect-ratio:1;object-fit:cover;display:block}.card .b{padding:18px}
-.price{color:var(--red);font-size:22px;font-weight:700}.tag{display:inline-block;background:var(--green);color:#fff;font-size:12px;padding:3px 8px;border-radius:99px}
-ul{padding-left:18px;line-height:1.5}
-form{display:flex;gap:8px;margin-top:12px}input{flex:1;padding:10px;border:1px solid #ccc;border-radius:8px}
-button{background:var(--red);color:#fff;border:0;padding:10px 16px;border-radius:8px;font-weight:600;cursor:pointer}
-.ok{color:var(--green);font-weight:600;display:none;margin-top:8px}
-footer{text-align:center;padding:30px;color:#666;font-size:13px}
-</style></head><body>
-<div class="banner">Preview store: pre-orders open soon. No payments are taken on this site.</div>
-<header><b>HI-CHOPPLA</b><nav><a href="#ball">BawPaw Ball</a><a href="#book">Sticker Book</a></nav></header><div class="stripe"></div>
-<section class="hero"><h1>Hmong goods, made to play and pass on</h1><p>Paj ntaub patterns on things families actually use.</p></section>
-<section class="grid">
-<article class="card" id="ball"><img src="img/povpob.jpg" alt="Hi-Choppla BawPaw Ball with Hmong paj ntaub pattern panels">
-<div class="b"><span class="tag">Coming soon · Pre-order</span><h2>BawPaw Ball</h2><div class="price">$16.00</div>
-<p>The BawPaw Ball is for pov pob, the Hmong New Year ball toss. It is made like a cornhole bag. It's soft and filled with pellets, so it lands with a thud and won't bounce or roll away into the crowd.</p>
-<ul><li>About 7.5 cm (3 in) round, sewn from panels</li><li>About 130 g, with washable poly-resin pellet fill</li><li>Cover is duck canvas or faux suede, printed with paj ntaub designs</li><li>Pairs: buy 2 and save, so you can toss with a partner</li></ul>
-<form onsubmit="return n(this)"><input type="email" required placeholder="Email me when pre-orders open"><button>Notify me</button></form><div class="ok">Thanks! You're on the list (preview only).</div></div></article>
-<article class="card" id="book"><img src="img/book.jpg" alt="Hmong Clothes Sticker Book cover">
-<div class="b"><span class="tag">Coming soon · Pre-order</span><h2>Hmong Clothes Sticker Book</h2><p style="margin:-8px 0 6px;color:#666">Published by Hi-Choppla</p><div class="price">$14.99</div>
-<p>A 22-page Hmong culture sticker book with 8 illustrated scenes, 96 labeled stickers and a glossary of Hmong words for kids and families.</p>
-<img src="img/stickers.jpg" alt="Sample sticker sheet" style="border-radius:8px;margin:8px 0">
-<form onsubmit="return n(this)"><input type="email" required placeholder="Email me when pre-orders open"><button>Notify me</button></form><div class="ok">Thanks! You're on the list (preview only).</div></div></article>
-</section>
-<footer>© 2026 Hi-Choppla · A SIVYIS brand · Akron, Ohio<br>Product images are concept renders. Final products may differ.</footer>
-<script>function n(f){f.nextElementSibling.style.display='block';f.reset();return false}</script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Hi-Choppla — Private Preview</title>
+  <meta name="description" content="Private preview of Hi-Choppla — Hmong goods under SIVYIS Corp. Not released." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Triangle + upward arrow mark (reusable symbol) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="hi-mark" viewBox="0 0 64 64">
+      <polygon points="32,6 58,54 6,54" fill="currentColor" />
+      <path d="M32 22 L32 42 M32 22 L24 32 M32 22 L40 32" fill="none" stroke="#faf6ef" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="hi-mark-gold" viewBox="0 0 64 64">
+      <polygon points="32,6 58,54 6,54" fill="#e9b20e" />
+      <path d="M32 22 L32 42 M32 22 L24 32 M32 22 L40 32" fill="none" stroke="#14213d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+  </svg>
+
+  <header class="nav" role="banner">
+    <a class="nav-brand" href="#top">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#hi-mark"></use></svg>
+      HI-CHOPPLA
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#story">Story</a>
+      <a href="#shop">Shop</a>
+      <a class="nav-cta" href="#about">About</a>
+      <span class="nav-badge">Private</span>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hi-Choppla hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <svg class="logo-mark" viewBox="0 0 120 120" role="img" aria-label="Hi-Choppla mark: upward triangle with arrow">
+          <defs>
+            <pattern id="textileFill" patternUnits="userSpaceOnUse" width="120" height="120">
+              <image href="img/paj-ntaub-texture.jpg" x="0" y="0" width="120" height="120" preserveAspectRatio="xMidYMid slice" />
+            </pattern>
+            <clipPath id="triClip"><polygon points="60,8 112,108 8,108" /></clipPath>
+          </defs>
+          <polygon points="60,8 112,108 8,108" fill="#14213d" />
+          <g clip-path="url(#triClip)">
+            <polygon points="60,8 112,108 8,108" fill="url(#textileFill)" opacity="0.45" />
+          </g>
+          <polygon points="60,8 112,108 8,108" fill="none" stroke="#e9b20e" stroke-width="3" />
+          <path d="M60 38 L60 78 M60 38 L46 56 M60 38 L74 56" fill="none" stroke="#faf6ef" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <h1>HI-CHOPPLA</h1>
+        <p class="hero-tag">Hmong goods, made to play and pass on.</p>
+        <div class="hero-meta">
+          <span>A SIVYIS brand</span>
+          <span>Akron, Ohio</span>
+          <span>Paj ntaub on things you use</span>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span>Scroll</span><span class="bar"></span></div>
+    </section>
+
+    <div class="stripe" aria-hidden="true"></div>
+
+    <!-- STORY / SCROLL CRAFT -->
+    <section class="story" id="story" aria-label="Brand story">
+      <div class="story-scrub" style="height: 280vh;">
+        <div class="story-pin">
+          <div class="story-words" aria-live="polite">
+            <span class="story-word">PLAY</span>
+            <span class="story-word">PASS ON</span>
+            <span class="story-word">ROOTS</span>
+          </div>
+          <p class="story-sub">Pov pob courts. New Year nights. Patterns that travel with the family.</p>
+        </div>
+      </div>
+
+      <div class="story-panels">
+        <article class="story-panel panel-cream" data-nav="">
+          <div>
+            <h2>Made to play</h2>
+            <p>Soft balls for pov pob. Stickers that teach the clothes. Goods that invite hands, not just shelves.</p>
+          </div>
+        </article>
+        <article class="story-panel panel-red" data-nav="red">
+          <div>
+            <h2>Made to pass on</h2>
+            <p>Scarves that carry stories. Family-tree cloth. Ceremonial pieces built for the moments that matter.</p>
+          </div>
+        </article>
+        <article class="story-panel panel-ink" data-nav="ink">
+          <div>
+            <h2>Rooted in paj ntaub</h2>
+            <p>Flower cloth color and geometry — red, ink, gold, green — on things families actually wear, toss, and keep.</p>
+          </div>
+        </article>
+        <article class="story-panel panel-gold" data-nav="gold">
+          <div>
+            <h2>From Akron, with care</h2>
+            <p>Hi-Choppla is a SIVYIS brand. We’re building quietly — this site is a private preview, not a launch.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Growing mask reveal -->
+      <div class="mask-section" aria-hidden="false">
+        <div class="mask-sticky">
+          <div class="mask-blob">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <polygon points="32,6 58,54 6,54" fill="#14213d" />
+              <path d="M32 22 L32 42 M32 22 L24 32 M32 22 L40 32" fill="none" stroke="#faf6ef" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="mask-copy">
+            <div>
+              <h2>Culture you can hold</h2>
+              <p>Nine things on the board. Two with photos. The rest coming — notify when each opens.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP -->
+    <section class="shop" id="shop" aria-label="Shop">
+      <div class="shop-head">
+        <h2>The goods</h2>
+        <p>No payments on this private preview. Leave an email and we’ll nudge you when pre-orders open.</p>
+      </div>
+
+      <div class="grid">
+        <!-- 1 Sticker Book -->
+        <article class="card" id="book">
+          <div class="card-media">
+            <img src="img/book.jpg" alt="Hmong Clothes Sticker Book cover" width="864" height="1152" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="tag pre">Pre-order soon</span>
+            <h3>Hmong Clothes Sticker Book</h3>
+            <div class="price">$14.99</div>
+            <p>22 pages · 8 scenes · 96 labeled stickers · Hmong glossary. Published by Hi-Choppla.</p>
+            <img src="img/stickers.jpg" alt="Sample sticker sheet" width="864" height="1152" loading="lazy" style="border-radius:10px;margin-top:4px;aspect-ratio:4/3;object-fit:cover;height:auto" />
+            <form class="notify" onsubmit="return hiNotify(this)">
+              <input type="email" required placeholder="Email for pre-order" autocomplete="email" />
+              <button type="submit">Notify</button>
+            </form>
+            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
+          </div>
+        </article>
+
+        <!-- 2 BawPaw Ball -->
+        <article class="card" id="ball">
+          <div class="card-media">
+            <img src="img/povpob.jpg" alt="Hi-Choppla BawPaw Ball with paj ntaub panels" width="1024" height="1024" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="tag pre">Pre-order soon</span>
+            <h3>BawPaw Ball</h3>
+            <div class="price">$16.00</div>
+            <p>For pov pob — the Hmong New Year ball toss. Soft, pellet-filled like a cornhole bag so it lands with a thud and won’t roll into the crowd.</p>
+            <form class="notify" onsubmit="return hiNotify(this)">
+              <input type="email" required placeholder="Email for pre-order" autocomplete="email" />
+              <button type="submit">Notify</button>
+            </form>
+            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
+          </div>
+        </article>
+
+        <!-- 3 Felt ornaments -->
+        <article class="card" id="ornaments">
+          <div class="card-media">
+            <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for felt ornaments">
+              <rect width="400" height="400" fill="#f3ebdd"/>
+              <g fill="none" stroke="#b3202a" stroke-width="8">
+                <polygon points="200,40 360,360 40,360"/>
+                <polygon points="200,100 310,320 90,320"/>
+              </g>
+              <circle cx="200" cy="210" r="36" fill="#e9b20e"/>
+              <circle cx="200" cy="210" r="16" fill="#2d6a4f"/>
+              <path d="M60 60 H140 V140 H60 Z M260 60 H340 V140 H260 Z" fill="#14213d" opacity="0.9"/>
+              <path d="M80 80 L120 80 L100 120 Z M280 80 L320 80 L300 120 Z" fill="#e9b20e"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <span class="tag soon">Coming soon</span>
+            <h3>Felt ornaments</h3>
+            <p>Seasonal felt pieces with paj ntaub-inspired shapes for the tree and the house.</p>
+            <form class="notify" onsubmit="return hiNotify(this)">
+              <input type="email" required placeholder="Notify me" autocomplete="email" />
+              <button type="submit">Notify</button>
+            </form>
+            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
+          </div>
+        </article>
+
+        <!-- 4 Bronze funeral bowl -->
+        <article class="card" id="bowl">
+          <div class="card-media">
+            <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for bronze funeral bowl">
+              <rect width="400" height="400" fill="#14213d"/>
+              <ellipse cx="200" cy="250" rx="140" ry="50" fill="none" stroke="#e9b20e" stroke-width="6"/>
+              <path d="M70 250 Q70 140 200 120 Q330 140 330 250" fill="none" stroke="#e9b20e" stroke-width="6"/>
+              <path d="M110 220 Q200 180 290 220" fill="none" stroke="#b3202a" stroke-width="4"/>
+              <circle cx="200" cy="160" r="10" fill="#e9b20e"/>
+              <text x="200" y="360" text-anchor="middle" fill="#faf6ef" font-family="Inter,sans-serif" font-size="14" letter-spacing="3">CEREMONIAL</text>
+            </svg>
+          </div>
+          <div class="card-body">
+            <span class="tag soon">Coming soon</span>
+            <h3>Bronze funeral bowl</h3>
+            <p>For joss paper burning — ceremonial designs cast with care for family rites.</p>
+            <form class="notify" onsubmit="return hiNotify(this)">
+              <input type="email" required placeholder="Notify me" autocomplete="email" />
+              <button type="submit">Notify</button>
+            </form>
+            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
+          </div>
+        </article>
+
+        <!-- 5 Skateboards -->
+        <article class="card" id="skate">
+          <div class="card-media">
+            <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for skateboards">
+              <rect width="400" height="400" fill="#2d6a4f"/>
+              <rect x="70" y="150" width="260" height="90" rx="45" fill="#faf6ef"/>
+              <rect x="90" y="165" width="220" height="60" rx="30" fill="#b3202a"/>
+              <g fill="#e9b20e">
+                <polygon points="140,195 160,175 180,195 160,215"/>
+                <polygon points="200,195 220,175 240,195 220,215"/>
+                <polygon points="260,195 280,175 300,195 280,215"/>
+              </g>
+              <circle cx="115" cy="255" r="14" fill="#14213d"/><circle cx="285" cy="255" r="14" fill="#14213d"/>
+              <circle cx="115" cy="135" r="14" fill="#14213d"/><circle cx="285" cy="135" r="14" fill="#14213d"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <span class="tag soon">Coming soon</span>
+            <h3>Skateboards</h3>
+            <p>Decks wrapped in Hmong textile energy — rideable art with paj ntaub punch.</p>
+            <form class="notify" onsubmit="return hiNotify(this)">
+              <input type="email" required placeholder="Notify me" autocomplete="email" />
+              <button type="submit">Notify</button>
+            </form>
+            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
+          </div>
+        </article>
+
+        <!-- 6 Tube socks -->
+        <article class="card" id="socks">
+          <div class="card-media">
+            <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for textile tube socks">
+              <rect width="400" height="400" fill="#faf6ef"/>
+              <path d="M140 40 H200 V300 Q200 360 150 360 Q110 360 110 310 V100 Q110 40 140 40Z" fill="#b3202a"/>
+              <path d="M210 40 H270 V300 Q270 360 220 360 Q180 360 180 310 V100 Q180 40 210 40Z" fill="#14213d"/>
+              <rect x="140" y="70" width="60" height="14" fill="#e9b20e"/>
+              <rect x="140" y="100" width="60" height="10" fill="#2d6a4f"/>
+              <rect x="210" y="70" width="60" height="14" fill="#e9b20e"/>
+              <rect x="210" y="100" width="60" height="10" fill="#b3202a"/>
+              <g stroke="#e9b20e" stroke-width="3" fill="none">
+                <path d="M155 160 L185 190 M185 160 L155 190"/>
+                <path d="M225 160 L255 190 M255 160 L225 190"/>
+              </g>
+            </svg>
+          </div>
+          <div class="card-body">
+            <span class="tag soon">Coming soon</span>
+            <h3>Hmong textile tube socks</h3>
+            <p>Cozy tube socks printed with textile stripes and flower-cloth motifs.</p>
+            <form class="notify" onsubmit="return hiNotify(this)">
+              <input type="email" required placeholder="Notify me" autocomplete="email" />
+              <button type="submit">Notify</button>
+            </form>
+            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
+          </div>
+        </article>
+
+        <!-- 7 Christmas sweaters -->
+        <article class="card" id="sweaters">
+          <div class="card-media">
+            <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for Christmas sweaters">
+              <rect width="400" height="400" fill="#b3202a"/>
+              <path d="M80 130 L130 110 L150 150 L250 150 L270 110 L320 130 L300 200 L300 330 L100 330 L100 200 Z" fill="#faf6ef"/>
+              <rect x="150" y="150" width="100" height="20" fill="#e9b20e"/>
+              <rect x="150" y="190" width="100" height="12" fill="#2d6a4f"/>
+              <rect x="150" y="220" width="100" height="12" fill="#14213d"/>
+              <g fill="#b3202a">
+                <polygon points="200,250 220,290 180,290"/>
+                <polygon points="200,270 212,295 188,295"/>
+              </g>
+              <circle cx="200" cy="248" r="6" fill="#e9b20e"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <span class="tag soon">Coming soon</span>
+            <h3>Christmas sweaters / sweatshirts</h3>
+            <p>Holiday knits and fleece with Hmong textile panels — festive without the kitsch overload.</p>
+            <form class="notify" onsubmit="return hiNotify(this)">
+              <input type="email" required placeholder="Notify me" autocomplete="email" />
+              <button type="submit">Notify</button>
+            </form>
+            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
+          </div>
+        </article>
+
+        <!-- 8 Story scarves -->
+        <article class="card" id="story-scarves">
+          <div class="card-media">
+            <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for story scarves">
+              <defs>
+                <linearGradient id="scarfGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#e9b20e"/>
+                  <stop offset="45%" stop-color="#b3202a"/>
+                  <stop offset="100%" stop-color="#14213d"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="400" fill="#f3ebdd"/>
+              <path d="M40 80 Q200 40 360 80 L340 320 Q200 360 60 320 Z" fill="url(#scarfGrad)"/>
+              <g fill="none" stroke="#faf6ef" stroke-width="3" opacity="0.85">
+                <path d="M90 120 H310 M100 160 H300 M110 200 H290 M120 240 H280"/>
+                <polygon points="200,140 230,180 170,180"/>
+                <polygon points="200,220 250,280 150,280"/>
+              </g>
+            </svg>
+          </div>
+          <div class="card-body">
+            <span class="tag soon">Coming soon</span>
+            <h3>Hmong story scarves</h3>
+            <p>Wearable cloth that carries scenes and motifs — soft storytelling you can wrap.</p>
+            <form class="notify" onsubmit="return hiNotify(this)">
+              <input type="email" required placeholder="Notify me" autocomplete="email" />
+              <button type="submit">Notify</button>
+            </form>
+            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
+          </div>
+        </article>
+
+        <!-- 9 Family-tree scarves -->
+        <article class="card" id="family-scarves">
+          <div class="card-media">
+            <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for family-tree scarves">
+              <rect width="400" height="400" fill="#14213d"/>
+              <g stroke="#e9b20e" stroke-width="4" fill="none">
+                <path d="M200 60 V300"/>
+                <path d="M200 120 H120 V180"/>
+                <path d="M200 120 H280 V180"/>
+                <path d="M200 200 H100 V260"/>
+                <path d="M200 200 H300 V260"/>
+                <path d="M200 260 H140 V320"/>
+                <path d="M200 260 H260 V320"/>
+              </g>
+              <g fill="#b3202a">
+                <circle cx="200" cy="60" r="14"/>
+                <circle cx="120" cy="180" r="10"/>
+                <circle cx="280" cy="180" r="10"/>
+                <circle cx="100" cy="260" r="10"/>
+                <circle cx="300" cy="260" r="10"/>
+                <circle cx="140" cy="320" r="10"/>
+                <circle cx="260" cy="320" r="10"/>
+              </g>
+              <circle cx="200" cy="60" r="5" fill="#e9b20e"/>
+            </svg>
+          </div>
+          <div class="card-body">
+            <span class="tag soon">Coming soon</span>
+            <h3>Family-tree scarves</h3>
+            <p>Lineage on cloth — a keepsake scarf for names, branches, and belonging.</p>
+            <form class="notify" onsubmit="return hiNotify(this)">
+              <input type="email" required placeholder="Notify me" autocomplete="email" />
+              <button type="submit">Notify</button>
+            </form>
+            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-inner">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#hi-mark-gold"></use></svg>
+        <h2>Hi-Choppla</h2>
+        <p>A SIVYIS brand from Akron, Ohio. We put paj ntaub patterns on things families actually use — to play with, to wear, to pass on.</p>
+        <p>This page is a private working preview. Photos for the sticker book and BawPaw Ball are concept renders; other products use pattern placeholders until samples land.</p>
+        <p class="meta">SIVYIS Corp · Akron, OH</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="private">Private preview — not released</div>
+    <div>© 2026 Hi-Choppla · A SIVYIS brand · Akron, Ohio</div>
+    <div style="margin-top:8px;opacity:0.7">No payments. Notify forms are client-side only on this preview.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
