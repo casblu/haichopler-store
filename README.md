@@ -1,6 +1,6 @@
-# Hi-Chopler storefront (preview)
+# Haichopler storefront (preview)
 
-Unlisted GitHub Pages preview of the Hi-Chopler brand + shop site.
+Unlisted GitHub Pages preview of the Haichopler brand + shop site.
 
 **Live:** https://casblu.github.io/hi-choppla-store/
 

@@ -7,11 +7,11 @@
 
 ---
 
-**Subject:** RFQ — Dye-sub round/gore panels + optional finished ball — Hi-Chopler BawPaw Ball
+**Subject:** RFQ — Dye-sub round/gore panels + optional finished ball — Haichopler BawPaw Ball
 
 Hello West Georgia Cornhole team,
 
-I’m Txai Xiong with **Hi-Chopler** (under **SIVYIS Corp**). We’re building a small-batch cultural hand-toss ball and your dye-sub canvas + resin work looks like the closest material match we’ve found.
+I’m Txai Xiong with **Haichopler** (under **SIVYIS Corp**). We’re building a small-batch cultural hand-toss ball and your dye-sub canvas + resin work looks like the closest material match we’ve found.
 
 ## What we need
 **Product:** Round bean-bag ball · **~7.5 cm** Ø · **120–150 g** (target 130 g) · **6 or 8 panels** (12 optional)  
@@ -36,16 +36,16 @@ I’m Txai Xiong with **Hi-Chopler** (under **SIVYIS Corp**). We’re building a
 ## Also please confirm
 1. Resin fill workable at ~130 g with inner liner bag  
 2. Recommended stitch / thread for a firm, dead-landing toss ball  
-3. Wholesale terms for a small brand (SIVYIS / Hi-Chopler)
+3. Wholesale terms for a small brand (SIVYIS / Haichopler)
 
 We may pair Track A prints with an Ohio cut-and-sew partner. Either track helps us decide.
 
 Thank you,
 
 Txai Xiong  
-Hi-Chopler · SIVYIS Corp  
+Haichopler · SIVYIS Corp  
 [phone] · [email]  
 Ref: wholesale inquiries page / dye-sub bag prints
 
 ---
-*Prepared 2026-10-26 · Hi-Chopler ops draft · Artwork not final*
+*Prepared 2026-10-26 · Haichopler ops draft · Artwork not final*

@@ -3,7 +3,7 @@
 **STATUS: DRAFT — NOT SENT. Do not email or spend without Txai’s explicit yes.**
 
 Updated: 2026-10-26 (America/New_York)  
-Brand: Hi-Chopler (SIVYIS Corp)  
+Brand: Haichopler (SIVYIS Corp)  
 Products: (A) Story scarves — repeatable runs · (B) Family-tree scarves — made-to-order commissions
 
 ---
@@ -11,14 +11,14 @@ Products: (A) Story scarves — repeatable runs · (B) Family-tree scarves — m
 ## Product brief pointers
 
 - Drive brief: [Hmong Story & Family-Tree Scarves — product brief](https://docs.google.com/document/d/1BVVRPcBoOwTnRsrQ4ttTJAtWQ_heTSPeMBXuEfOGhRs/edit)
-- Drive plan PDF: [Hi-Choppla — Hmong Story & Family-Tree Scarves — Product & Business Plan.pdf](https://drive.google.com/file/d/1LCAw7GvozjA7nywUclWm8sMgU42c0zmH/view)
+- Drive plan PDF: [Haichopler — Hmong Story & Family-Tree Scarves — Product & Business Plan.pdf](https://drive.google.com/file/d/1LCAw7GvozjA7nywUclWm8sMgU42c0zmH/view)
 - Local: `/workspace/slides/hmong-scarves-pJXxyG/`
 
 **Spec snapshot (story art + family-tree visual system blocked on Txai):**
 - (A) Story scarves: 2–4 SKUs Y1; illustrative retail $55–95  
 - (B) Family-tree: MTO from customer names/branches; illustrative retail $120–250+  
 - Materials TBD: knit, woven, or printed silk-cotton  
-- Motifs: elephant foot, snail, mountains, fence, diamonds on story-cloth grid; original Hi-Chopler layouts; care with clan symbols
+- Motifs: elephant foot, snail, mountains, fence, diamonds on story-cloth grid; original Haichopler layouts; care with clan symbols
 
 ---
 
@@ -45,11 +45,11 @@ Products: (A) Story scarves — repeatable runs · (B) Family-tree scarves — m
 
 ## Combined draft RFQ body (one email template — send separately per maker after Txai yes)
 
-**Subject:** RFQ — Hi-Chopler story scarves (repeat) + family-tree scarves (made-to-order)
+**Subject:** RFQ — Haichopler story scarves (repeat) + family-tree scarves (made-to-order)
 
 Hello —
 
-Hi-Chopler (Hmong cultural products under SIVYIS Corp) is sourcing a **US print + cut-and-sew** partner for two related scarf lines:
+Haichopler (Hmong cultural products under SIVYIS Corp) is sourcing a **US print + cut-and-sew** partner for two related scarf lines:
 
 **A. Story scarves** — repeatable runs of narrative / paj ntaub–grid designs (2–4 SKUs year 1).  
 **B. Family-tree scarves** — made-to-order pieces from customer-supplied names and branch layouts (variable art each order).

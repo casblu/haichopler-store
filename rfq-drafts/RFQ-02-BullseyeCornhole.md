@@ -7,11 +7,11 @@
 
 ---
 
-**Subject:** RFQ — Custom round panel bean-bag ball (Ohio-made) — Hi-Chopler / SIVYIS
+**Subject:** RFQ — Custom round panel bean-bag ball (Ohio-made) — Haichopler / SIVYIS
 
 Hi Ed / Bullseye team,
 
-I’m Txai Xiong with **Hi-Chopler** (under **SIVYIS Corp**). We love that you make custom bags in **Cincinnati** and wanted to ask about a non-square product.
+I’m Txai Xiong with **Haichopler** (under **SIVYIS Corp**). We love that you make custom bags in **Cincinnati** and wanted to ask about a non-square product.
 
 ## Spec
 - Round hand-toss bean-bag ball, **~7.5 cm** diameter, **~130 g** (range 120–150 g)
@@ -34,8 +34,8 @@ Ohio manufacture is a priority for us. Happy to send a simple panel diagram when
 Thank you,
 
 Txai Xiong  
-Hi-Chopler · SIVYIS Corp  
+Haichopler · SIVYIS Corp  
 [phone] · [email]
 
 ---
-*Prepared 2026-10-26 · Hi-Chopler ops draft · Artwork not final*
+*Prepared 2026-10-26 · Haichopler ops draft · Artwork not final*

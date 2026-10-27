@@ -3,7 +3,7 @@
 **STATUS: DRAFT — NOT SENT. Do not email, DM, or spend without Txai’s explicit yes.**
 
 Updated: 2026-10-26 21:40 EDT (America/New_York)  
-Brand: Hi-Chopler (SIVYIS Corp)  
+Brand: Haichopler (SIVYIS Corp)  
 Product: Hmong textile skirts (paj ntaub–inspired / traditional-pleat inspired wear)
 
 ---
@@ -25,7 +25,7 @@ Product: Hmong textile skirts (paj ntaub–inspired / traditional-pleat inspired
 - **Style:** Traditional Hmong skirts / moob clothing; size-coded listings (e.g. 41×22, 44×22).
 - **URL:** https://www.etsy.com/shop/HmongFashionSales
 - **Rough public range:** handmade skirts ~$250; some related pieces ~$40–200
-- **Fit for Hi-Chopler:** Best first conversation *when Txai approves send* for authentic construction + small-batch custom motif discussion.
+- **Fit for Haichopler:** Best first conversation *when Txai approves send* for authentic construction + small-batch custom motif discussion.
 
 ### 2. Hmong Shop USA — US retailer (TOP for accessible modern/pleated blanks)
 - **Why:** US storefront; machine-pleated black Hmong skirt (elastic waist, ~30" length, not wraparound) at **$40** public — good reference for everyday silhouette / price floor.
@@ -42,7 +42,7 @@ Product: Hmong textile skirts (paj ntaub–inspired / traditional-pleat inspired
 - **Why Txai named this lane:** Closest live match to “HmongHandmade Designs on Etsy” — **HmongHandmadeFashion** (Hanoi / Sapa, Vietnam; also https://www.hmonghandmadefashion.com/). Large **Skirt** section (40+ listings), embroidered outfits, custom-size maxi fishtail / brocade / long skirts.
 - **Rough public range:** often ~$50–200+ (sale pricing varies)
 - **URL:** https://www.etsy.com/shop/HmongHandmadeFashion · https://www.hmonghandmadefashion.com/
-- **Policy:** Prefer US makers for Hi-Chopler IP. Keep as **silhouette / finish reference only** unless Txai overrides.
+- **Policy:** Prefer US makers for Haichopler IP. Keep as **silhouette / finish reference only** unless Txai overrides.
 
 ### 5. Also noted (secondary)
 - **TribeByWinnie** (Etsy) — Vietnamese Hmong pleated embroidery wrap skirts; original ~£69 / custom size higher; more art-object / wrap than US apparel OEM.
@@ -53,11 +53,11 @@ Product: Hmong textile skirts (paj ntaub–inspired / traditional-pleat inspired
 
 ## Draft RFQ body (send only after Txai yes — customize To: per maker)
 
-**Subject:** RFQ — Hi-Chopler Hmong textile skirts (US small brand, custom motifs)
+**Subject:** RFQ — Haichopler Hmong textile skirts (US small brand, custom motifs)
 
 Hello —
 
-Hi-Chopler (Hmong cultural products under SIVYIS Corp, Akron OH) is preparing a small run of **women’s textile skirts** with **original paj ntaub–inspired motifs** (founder-approved art — not copying another shop’s designs).
+Haichopler (Hmong cultural products under SIVYIS Corp, Akron OH) is preparing a small run of **women’s textile skirts** with **original paj ntaub–inspired motifs** (founder-approved art — not copying another shop’s designs).
 
 Please quote / confirm:
 1. Construction options you offer (wrap / pleated / tulip / elastic-waist) and size grading  

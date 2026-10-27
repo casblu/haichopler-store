@@ -3,7 +3,7 @@
 **STATUS: DRAFT — NOT SENT. Do not email, DM, or spend without Txai’s explicit yes.**
 
 Updated: 2026-10-26 21:40 EDT (America/New_York)  
-Brand: Hi-Chopler (SIVYIS Corp)  
+Brand: Haichopler (SIVYIS Corp)  
 Product: Women’s knit beanies **inspired by** traditional Hmong women’s purple turbans / hats finished with a black-and-white crossing wrap stripe (*siv ceeb* look)
 
 ---
@@ -12,7 +12,7 @@ Product: Women’s knit beanies **inspired by** traditional Hmong women’s purp
 
 Traditional Xieng Khouang–style women’s headdress: long purple (indigo–violet) gauze wrap forming a turban, finished with a black-and-white striped band (*siv ceeb*) that crosses above the forehead. Pre-made “purple hats” exist in community commerce; regional dress carries meaning (origin, ceremony, marriage contexts).
 
-**Hi-Chopler intent:** everyday **wearable beanie** that **echoes** purple body + black/white wrap-stripe — **not** a literal ceremonial turban replica. Motif placement, stripe angle, and any claim language need **Txai accuracy / cultural review** before production art or marketing copy locks.
+**Haichopler intent:** everyday **wearable beanie** that **echoes** purple body + black/white wrap-stripe — **not** a literal ceremonial turban replica. Motif placement, stripe angle, and any claim language need **Txai accuracy / cultural review** before production art or marketing copy locks.
 
 Style refs (research only, not partners):  
 - Shop 63 writeups on Hmong purple turban / siv ceeb: https://shop63.store/hmong-women-purple-turban/  
@@ -25,7 +25,7 @@ Style refs (research only, not partners):
 - Adult women’s beanie (cuffed or uncuffed TBD)
 - Body: purple / deep violet acrylic or soft blend
 - Accents: black + white stripe band that **crosses / wraps** (knit-in jacquard stripe preferred over printed graphic)
-- Optional: subtle Hi-Chopler mark on cuff or care tag only
+- Optional: subtle Haichopler mark on cuff or care tag only
 - Illustrative retail TBD (US custom beanies often land ~$18–40 retail once margins set)
 
 ---
@@ -61,11 +61,11 @@ Style refs (research only, not partners):
 
 ## Draft RFQ body (send only after Txai yes)
 
-**Subject:** RFQ — Hi-Chopler women’s beanies (purple body + black/white wrap stripe)
+**Subject:** RFQ — Haichopler women’s beanies (purple body + black/white wrap stripe)
 
 Hello —
 
-Hi-Chopler (Hmong cultural products, SIVYIS Corp) needs a quote for **US-knit women’s beanies** with a **purple body** and a **black-and-white stripe that wraps/crosses** (inspired by traditional Hmong women’s hat finishing — original Hi-Chopler interpretation, not a ceremonial replica).
+Haichopler (Hmong cultural products, SIVYIS Corp) needs a quote for **US-knit women’s beanies** with a **purple body** and a **black-and-white stripe that wraps/crosses** (inspired by traditional Hmong women’s hat finishing — original Haichopler interpretation, not a ceremonial replica).
 
 Please quote:
 1. Feasibility of knit-in or applied crossing stripe (vs simple horizontal bands)  

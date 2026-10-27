@@ -3,7 +3,7 @@
 **STATUS: DRAFT — NOT SENT. Do not email or spend without Txai’s explicit yes.**
 
 Updated: 2026-10-26 (America/New_York)  
-Brand: Hi-Chopler (SIVYIS Corp)  
+Brand: Haichopler (SIVYIS Corp)  
 Product: Hmong textile tube socks (paj ntaub–inspired knit-in motifs)
 
 ---
@@ -11,7 +11,7 @@ Product: Hmong textile tube socks (paj ntaub–inspired knit-in motifs)
 ## Product brief pointers
 
 - Drive brief: [Hmong Textile Tube Socks — product brief](https://docs.google.com/document/d/1WuoxIu1B34BtwgO_m949JSJuT9HnE9-Fnt3IEhgbYRc/edit)
-- Drive plan PDF: [Hi-Choppla — Hmong Textile Tube Socks — Product & Business Plan.pdf](https://drive.google.com/file/d/1WZirEbpB_dnhAP1Hw9RBrW8flo5RrhfC/view)
+- Drive plan PDF: [Haichopler — Hmong Textile Tube Socks — Product & Business Plan.pdf](https://drive.google.com/file/d/1WZirEbpB_dnhAP1Hw9RBrW8flo5RrhfC/view)
 - Local: `/workspace/slides/hmong-tube-socks-ieeGvc/`
 
 **Spec snapshot (planning — pattern accuracy blocked on Txai):**
@@ -26,7 +26,7 @@ Product: Hmong textile tube socks (paj ntaub–inspired knit-in motifs)
 ## US maker shortlist (prefer knit-in / jacquard)
 
 ### 1. Sock Club — North Carolina mills (TOP PICK for US-made + low MOQ)
-- **Why:** Knit in NC; US-sourced/spun cotton claim; true domestic mill story fits Hi-Chopler IP preference.
+- **Why:** Knit in NC; US-sourced/spun cotton claim; true domestic mill story fits Haichopler IP preference.
 - **MOQ (public):** ~30 pairs per design/size (some styles 60; infants higher)
 - **Contact:** https://custom.sockclub.com/contact-us · `custom@sockclub.com` · 1-800-618-4861
 - **Notes:** Free design support/mockups claimed; ask explicitly for tube/crew + multi-color jacquard band complexity.
@@ -50,11 +50,11 @@ Product: Hmong textile tube socks (paj ntaub–inspired knit-in motifs)
 
 ## Draft RFQ body (send only after Txai yes — customize To: per maker)
 
-**Subject:** RFQ — Hi-Chopler custom paj ntaub tube socks (US knit, small brand)
+**Subject:** RFQ — Haichopler custom paj ntaub tube socks (US knit, small brand)
 
 Hello —
 
-Hi-Chopler (Hmong cultural products, SIVYIS Corp) needs a quote for **US-knit tube/crew socks** with **knit-in geometric textile bands** (original paj ntaub–inspired art — not sublimation print).
+Haichopler (Hmong cultural products, SIVYIS Corp) needs a quote for **US-knit tube/crew socks** with **knit-in geometric textile bands** (original paj ntaub–inspired art — not sublimation print).
 
 Please quote:
 1. Feasibility of 4–6 color jacquard / knit-in band motifs around cuff and shaft  
