@@ -1,10 +1,10 @@
 # Hi-Chopler product tracker
-Updated: 2026-10-27 07:03 EDT (America/New_York) · Owner: Armuro + Hi-Chopler bot · Design gate: Txai
+Updated: 2026-10-27 09:10 EDT (America/New_York) · Owner: Armuro + Hi-Chopler bot · Design gate: Txai
 
 | Product | Status | Next ops step (no design needed) | Blocked on Txai (design/spend) |
 |---|---|---|---|
 | Hmong Clothes Sticker Book | Concept + store card ($14.99) · print shortlist drafted | Txai to approve send of printer RFQ (see `STICKER-BOOK-PRINT.md`) | Final page art / cover aesthetic |
-| BawPaw Ball | Priority · concept + store ($16) | US Midwest maker shortlist + draft RFQ (other executor; do not overwrite `BAWPAW-MAKER-SHORTLIST.md`) | Maker pick, price, qty, panel art |
+| BawPaw Ball | Priority · concept + store ($16) · 6-maker US shortlist + 3 draft RFQs ready | Txai approve send of RFQ #1 True Cornhole (Albany, OH) with artwork-to-follow; then Bullseye → West Georgia (`BAWPAW-MAKER-SHORTLIST.md`, `rfq-drafts/`) | Maker pick, price, qty, panel art |
 | Felt ornaments | Coming soon · maker-type notes done | After motif lock: draft RFQ to US felt/ornament shops (`ORNAMENTS-BOWL-SKATE.md`) | Motif set / colorways |
 | Bronze funeral bowl | Coming soon · foundry-type notes done | After ceremonial design: draft RFQ Hildebran + East Point | Ceremonial design approval |
 | Skateboards | Coming soon · deck shop notes done | After graphics: draft RFQ Woodchuck + CustomSkateboards (5–25) | Graphic decks |
