@@ -10,10 +10,11 @@ Updated: 2026-10-26 20:40 EDT (America/New_York) · Owner: Armuro + Hi-Choppla b
 | Skateboards | Coming soon · deck shop notes done | After graphics: draft RFQ Woodchuck + CustomSkateboards (5–25) | Graphic decks |
 | Textile tube socks | Coming soon · US shortlist + draft RFQ ready | Txai pick maker + approve send (`RFQ-TUBE-SOCKS.md`) | Paj ntaub pattern accuracy |
 | Christmas sweaters/sweatshirts | Coming soon · Found Surface draft RFQ ready | Txai approve Found Surface send / Studio account (`RFQ-FOUND-SURFACE-XMAS.md`) | Jacquard / embroidery art |
-| Story scarves | Coming soon · shared scarf RFQ ready | Txai approve partner pick + send (`RFQ-SCARVES.md`) | Story art + layout |
-| Family-tree scarves | Coming soon · same RFQ as story | Same as story scarves (`RFQ-SCARVES.md`) | Family-tree visual system |
+| Story scarves (store: shared **Scarves** card) | Coming soon · shared scarf RFQ ready | Txai approve partner pick + send (`RFQ-SCARVES.md`) | Story art + layout |
+| Family-tree scarves (store: shared **Scarves** card) | Coming soon · same RFQ as story | Same as story scarves (`RFQ-SCARVES.md`) | Family-tree visual system |
 
 Store: https://casblu.github.io/hi-choppla-store/  
+Store shows one **Scarves** card covering both story and family-tree scarves (tracked as two lineup items here).  
 Rules: advance ops freely; never finalize aesthetics or spend without Txai.  
 **Hard rule:** no emails, forms, calls, or DMs to makers — research + draft files only until Txai says send.
 
