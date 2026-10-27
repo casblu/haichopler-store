@@ -1,5 +1,5 @@
-# Hi-Choppla product tracker
-Updated: 2026-10-26 21:40 EDT (America/New_York) · Owner: Armuro + Hi-Choppla bot · Design gate: Txai
+# Hi-Chopler product tracker
+Updated: 2026-10-27 07:03 EDT (America/New_York) · Owner: Armuro + Hi-Chopler bot · Design gate: Txai
 
 | Product | Status | Next ops step (no design needed) | Blocked on Txai (design/spend) |
 |---|---|---|---|

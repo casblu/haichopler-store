@@ -7,11 +7,11 @@
 
 ---
 
-**Subject:** RFQ — Custom round multi-panel bean-bag ball (7.5 cm / ~130 g) — Hi-Choppla / SIVYIS
+**Subject:** RFQ — Custom round multi-panel bean-bag ball (7.5 cm / ~130 g) — Hi-Chopler / SIVYIS
 
 Hi True Cornhole team,
 
-I’m Txai Xiong with **Hi-Choppla** (under **SIVYIS Corp**). We’re developing a cultural hand-toss ball (Hmong *pov pob* / BawPaw Ball) and would like a quote from a USA Midwest maker.
+I’m Txai Xiong with **Hi-Chopler** (under **SIVYIS Corp**). We’re developing a cultural hand-toss ball (Hmong *pov pob* / BawPaw Ball) and would like a quote from a USA Midwest maker.
 
 ## Product we’re asking you to quote
 - **Form:** Round bean-bag ball, **6 or 8 sewn panels** (12-panel optional if easier)
@@ -36,8 +36,8 @@ Ship-to will be in the **US Midwest (Ohio area)**. Happy to share a one-page spe
 Thank you — looking forward to your thoughts.
 
 Txai Xiong  
-Hi-Choppla · SIVYIS Corp  
+Hi-Chopler · SIVYIS Corp  
 [phone] · [email]
 
 ---
-*Prepared 2026-10-26 · Hi-Choppla ops draft · Artwork not final*
+*Prepared 2026-10-26 · Hi-Chopler ops draft · Artwork not final*

@@ -1,4 +1,4 @@
-/* Hi-Choppla private preview — scroll craft */
+/* Hi-Chopler private preview — scroll craft */
 (function () {
   "use strict";
 

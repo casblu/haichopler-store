@@ -1,9 +1,9 @@
-# DRAFT RFQ — Found Surface (Cleveland) · Hi-Choppla Christmas Sweaters/Sweatshirts
+# DRAFT RFQ — Found Surface (Cleveland) · Hi-Chopler Christmas Sweaters/Sweatshirts
 
 **STATUS: DRAFT — NOT SENT. Do not email or spend without Txai’s explicit yes.**
 
 Updated: 2026-10-26 (America/New_York)  
-Brand: Hi-Choppla (SIVYIS Corp)  
+Brand: Hi-Chopler (SIVYIS Corp)  
 Primary maker (standing brief): **Found Surface**, Mulberry / West Bank of the Flats, Cleveland, OH
 
 ---
@@ -31,7 +31,7 @@ Primary maker (standing brief): **Found Surface**, Mulberry / West Bank of the F
 **Spec snapshot (planning assumptions — design still blocked on Txai):**
 - Knit Christmas sweaters + fleece/cut-sew sweatshirts
 - Paj ntaub on chest panel, yoke, sleeve bands, or all-over band studies
-- Motifs (original Hi-Choppla drawings): elephant foot, snail, mountains, fence, diamonds — counted cross-stitch grammar; no clan motif without permission; festive, not costume kitsch
+- Motifs (original Hi-Chopler drawings): elephant foot, snail, mountains, fence, diamonds — counted cross-stitch grammar; no clan motif without permission; festive, not costume kitsch
 - Sizes S–2XL; washable everyday care where construction allows
 - Year-1 line: 1 sweater + 1 sweatshirt × 2–3 patterns; colorways traditional bright / indigo / cream-wine
 - Illustrative retail: sweatshirts $45–75 · sweaters $65–120
@@ -41,11 +41,11 @@ Primary maker (standing brief): **Found Surface**, Mulberry / West Bank of the F
 ## Draft message body (for Txai to approve before send)
 
 **To:** sales@foundsurface.com  
-**Subject:** RFQ — Hi-Choppla custom jacquard Christmas sweater + sweatshirt (small brand, Cleveland preferred)
+**Subject:** RFQ — Hi-Chopler custom jacquard Christmas sweater + sweatshirt (small brand, Cleveland preferred)
 
 Hello Found Surface team —
 
-We’re Hi-Choppla (Hmong cultural products under SIVYIS Corp). We’re preparing a small Year-1 holiday drop and would like a development/production quote for:
+We’re Hi-Chopler (Hmong cultural products under SIVYIS Corp). We’re preparing a small Year-1 holiday drop and would like a development/production quote for:
 
 1. **Fully-fashioned or 3D-knit Christmas sweater** with knit-in paj ntaub–inspired geometric panels (jacquard / graphic-as-yarn preferred over print-on-blank).  
 2. **Sweatshirt** option if you also do cut-and-sew fleece with embroidered or appliqué textile panels (or advise best path).
@@ -62,7 +62,7 @@ We can share tech sketches and a product plan once you confirm the best intake p
 
 Thank you,  
 [Txai / authorized sender]  
-Hi-Choppla · SIVYIS Corp
+Hi-Chopler · SIVYIS Corp
 
 ---
 
