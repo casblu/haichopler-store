@@ -1,4 +1,4 @@
-/* Haichopler private preview — scroll craft */
+/* Hi Choppler private preview — scroll craft */
 (function () {
   "use strict";
 
