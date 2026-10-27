@@ -5,22 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Hi-Choppla — Private Preview</title>
-  <meta name="description" content="Private preview of Hi-Choppla — Hmong goods under SIVYIS Corp. Not released." />
+  <meta name="description" content="Private preview of Hi-Choppla — Hmong products under SIVYIS Corp. Not released." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Triangle + upward arrow mark (reusable symbol) -->
+  <!--
+    Triangle + upward arrow mark.
+    Arrowhead fills the apex evenly (tip near triangle tip; wings use the upper triangle width).
+    Pure vector — stays sharp at any scale. No raster logos.
+  -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
-    <symbol id="hi-mark" viewBox="0 0 64 64">
-      <polygon points="32,6 58,54 6,54" fill="currentColor" />
-      <path d="M32 22 L32 42 M32 22 L24 32 M32 22 L40 32" fill="none" stroke="#faf6ef" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Light arrow on currentColor triangle (nav / dark-ish fills) -->
+    <symbol id="hi-mark" viewBox="0 0 64 64" overflow="visible">
+      <polygon points="32,3 61,59 3,59" fill="currentColor" />
+      <!-- Filled arrow occupying the top point -->
+      <path d="M32 8 L45 30 H38.5 V51 H25.5 V30 H19 Z" fill="#faf7f5" />
     </symbol>
-    <symbol id="hi-mark-gold" viewBox="0 0 64 64">
-      <polygon points="32,6 58,54 6,54" fill="#e9b20e" />
-      <path d="M32 22 L32 42 M32 22 L24 32 M32 22 L40 32" fill="none" stroke="#14213d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Soft green triangle + off-white arrow (about / light sections) -->
+    <symbol id="hi-mark-soft" viewBox="0 0 64 64" overflow="visible">
+      <polygon points="32,3 61,59 3,59" fill="#5a9e78" />
+      <path d="M32 8 L45 30 H38.5 V51 H25.5 V30 H19 Z" fill="#faf7f5" />
+    </symbol>
+    <!-- Pink accent variant -->
+    <symbol id="hi-mark-pink" viewBox="0 0 64 64" overflow="visible">
+      <polygon points="32,3 61,59 3,59" fill="#d46a8a" />
+      <path d="M32 8 L45 30 H38.5 V51 H25.5 V30 H19 Z" fill="#faf7f5" />
     </symbol>
   </svg>
 
@@ -43,22 +55,25 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-pattern" aria-hidden="true"></div>
       <div class="hero-inner">
-        <svg class="logo-mark" viewBox="0 0 120 120" role="img" aria-label="Hi-Choppla mark: upward triangle with arrow">
+        <svg class="logo-mark" viewBox="0 0 120 120" role="img" aria-label="Hi-Choppla mark: upward triangle with arrow filling the apex">
           <defs>
-            <pattern id="textileFill" patternUnits="userSpaceOnUse" width="120" height="120">
-              <image href="img/paj-ntaub-texture.jpg" x="0" y="0" width="120" height="120" preserveAspectRatio="xMidYMid slice" />
+            <pattern id="textileGeom" patternUnits="userSpaceOnUse" width="12" height="12">
+              <rect width="12" height="12" fill="#5a9e78" />
+              <path d="M0 6 H12 M6 0 V12" stroke="#b8d9c4" stroke-width="1.2" opacity="0.55" />
+              <circle cx="6" cy="6" r="1.4" fill="#f2b6c6" opacity="0.7" />
             </pattern>
-            <clipPath id="triClip"><polygon points="60,8 112,108 8,108" /></clipPath>
+            <clipPath id="triClip"><polygon points="60,6 114,112 6,112" /></clipPath>
           </defs>
-          <polygon points="60,8 112,108 8,108" fill="#14213d" />
+          <polygon points="60,6 114,112 6,112" fill="#5a9e78" />
           <g clip-path="url(#triClip)">
-            <polygon points="60,8 112,108 8,108" fill="url(#textileFill)" opacity="0.45" />
+            <polygon points="60,6 114,112 6,112" fill="url(#textileGeom)" opacity="0.55" />
           </g>
-          <polygon points="60,8 112,108 8,108" fill="none" stroke="#e9b20e" stroke-width="3" />
-          <path d="M60 38 L60 78 M60 38 L46 56 M60 38 L74 56" fill="none" stroke="#faf6ef" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+          <polygon points="60,6 114,112 6,112" fill="none" stroke="#f2b6c6" stroke-width="3.5" />
+          <!-- Arrow fills the apex evenly -->
+          <path d="M60 14 L84 50 H72 V90 H48 V50 H36 Z" fill="#faf7f5" />
         </svg>
         <h1>HI-CHOPPLA</h1>
-        <p class="hero-tag">Hmong goods, made to play and pass on.</p>
+        <p class="hero-tag">Hmong products, made to play and pass on.</p>
         <div class="hero-meta">
           <span>A SIVYIS brand</span>
           <span>Akron, Ohio</span>
@@ -87,22 +102,22 @@
         <article class="story-panel panel-cream" data-nav="">
           <div>
             <h2>Made to play</h2>
-            <p>Soft balls for pov pob. Stickers that teach the clothes. Goods that invite hands, not just shelves.</p>
+            <p>Soft balls for pov pob. Stickers that teach the clothes. Products that invite hands, not just shelves.</p>
           </div>
         </article>
-        <article class="story-panel panel-red" data-nav="red">
+        <article class="story-panel panel-pink" data-nav="pink">
           <div>
             <h2>Made to pass on</h2>
             <p>Scarves that carry stories. Family-tree cloth. Ceremonial pieces built for the moments that matter.</p>
           </div>
         </article>
-        <article class="story-panel panel-ink" data-nav="ink">
+        <article class="story-panel panel-green" data-nav="green">
           <div>
             <h2>Rooted in paj ntaub</h2>
-            <p>Flower cloth color and geometry — red, ink, gold, green — on things families actually wear, toss, and keep.</p>
+            <p>Flower cloth color and geometry — soft greens, pinks, and off-white, with blue, red, and rare yellow accents — on things families actually wear, toss, and keep.</p>
           </div>
         </article>
-        <article class="story-panel panel-gold" data-nav="gold">
+        <article class="story-panel panel-blue" data-nav="blue">
           <div>
             <h2>From Akron, with care</h2>
             <p>Hi-Choppla is a SIVYIS brand. We’re building quietly — this site is a private preview, not a launch.</p>
@@ -110,19 +125,19 @@
         </article>
       </div>
 
-      <!-- Growing mask reveal -->
+      <!-- Growing mask reveal — large crisp SVG, no blur on the mark -->
       <div class="mask-section" aria-hidden="false">
         <div class="mask-sticky">
-          <div class="mask-blob">
-            <svg viewBox="0 0 64 64" aria-hidden="true">
-              <polygon points="32,6 58,54 6,54" fill="#14213d" />
-              <path d="M32 22 L32 42 M32 22 L24 32 M32 22 L40 32" fill="none" stroke="#faf6ef" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+          <div class="mask-expand">
+            <svg class="mask-mark" viewBox="0 0 64 64" aria-hidden="true" shape-rendering="geometricPrecision">
+              <polygon points="32,3 61,59 3,59" fill="#2a3340" />
+              <path d="M32 8 L45 30 H38.5 V51 H25.5 V30 H19 Z" fill="#faf7f5" />
             </svg>
           </div>
           <div class="mask-copy">
             <div>
               <h2>Culture you can hold</h2>
-              <p>Nine things on the board. Two with photos. The rest coming — notify when each opens.</p>
+              <p>Nine products on the board. Two with photos. The rest coming — notify when each opens.</p>
             </div>
           </div>
         </div>
@@ -132,7 +147,7 @@
     <!-- SHOP -->
     <section class="shop" id="shop" aria-label="Shop">
       <div class="shop-head">
-        <h2>The goods</h2>
+        <h2>Products</h2>
         <p>No payments on this private preview. Leave an email and we’ll nudge you when pre-orders open.</p>
       </div>
 
@@ -178,15 +193,15 @@
         <article class="card" id="ornaments">
           <div class="card-media">
             <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for felt ornaments">
-              <rect width="400" height="400" fill="#f3ebdd"/>
-              <g fill="none" stroke="#b3202a" stroke-width="8">
+              <rect width="400" height="400" fill="#f8f4f0"/>
+              <g fill="none" stroke="#d46a8a" stroke-width="8">
                 <polygon points="200,40 360,360 40,360"/>
                 <polygon points="200,100 310,320 90,320"/>
               </g>
-              <circle cx="200" cy="210" r="36" fill="#e9b20e"/>
-              <circle cx="200" cy="210" r="16" fill="#2d6a4f"/>
-              <path d="M60 60 H140 V140 H60 Z M260 60 H340 V140 H260 Z" fill="#14213d" opacity="0.9"/>
-              <path d="M80 80 L120 80 L100 120 Z M280 80 L320 80 L300 120 Z" fill="#e9b20e"/>
+              <circle cx="200" cy="210" r="36" fill="#e8c547"/>
+              <circle cx="200" cy="210" r="16" fill="#5a9e78"/>
+              <path d="M60 60 H140 V140 H60 Z M260 60 H340 V140 H260 Z" fill="#6b9fd4" opacity="0.9"/>
+              <path d="M80 80 L120 80 L100 120 Z M280 80 L320 80 L300 120 Z" fill="#f2b6c6"/>
             </svg>
           </div>
           <div class="card-body">
@@ -205,12 +220,12 @@
         <article class="card" id="bowl">
           <div class="card-media">
             <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for bronze funeral bowl">
-              <rect width="400" height="400" fill="#14213d"/>
-              <ellipse cx="200" cy="250" rx="140" ry="50" fill="none" stroke="#e9b20e" stroke-width="6"/>
-              <path d="M70 250 Q70 140 200 120 Q330 140 330 250" fill="none" stroke="#e9b20e" stroke-width="6"/>
-              <path d="M110 220 Q200 180 290 220" fill="none" stroke="#b3202a" stroke-width="4"/>
-              <circle cx="200" cy="160" r="10" fill="#e9b20e"/>
-              <text x="200" y="360" text-anchor="middle" fill="#faf6ef" font-family="Inter,sans-serif" font-size="14" letter-spacing="3">CEREMONIAL</text>
+              <rect width="400" height="400" fill="#2a3340"/>
+              <ellipse cx="200" cy="250" rx="140" ry="50" fill="none" stroke="#e8c547" stroke-width="6"/>
+              <path d="M70 250 Q70 140 200 120 Q330 140 330 250" fill="none" stroke="#e8c547" stroke-width="6"/>
+              <path d="M110 220 Q200 180 290 220" fill="none" stroke="#d45a5a" stroke-width="4"/>
+              <circle cx="200" cy="160" r="10" fill="#e8c547"/>
+              <text x="200" y="360" text-anchor="middle" fill="#faf7f5" font-family="Inter,sans-serif" font-size="14" letter-spacing="3">CEREMONIAL</text>
             </svg>
           </div>
           <div class="card-body">
@@ -229,16 +244,16 @@
         <article class="card" id="skate">
           <div class="card-media">
             <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for skateboards">
-              <rect width="400" height="400" fill="#2d6a4f"/>
-              <rect x="70" y="150" width="260" height="90" rx="45" fill="#faf6ef"/>
-              <rect x="90" y="165" width="220" height="60" rx="30" fill="#b3202a"/>
-              <g fill="#e9b20e">
+              <rect width="400" height="400" fill="#5a9e78"/>
+              <rect x="70" y="150" width="260" height="90" rx="45" fill="#faf7f5"/>
+              <rect x="90" y="165" width="220" height="60" rx="30" fill="#d46a8a"/>
+              <g fill="#e8c547">
                 <polygon points="140,195 160,175 180,195 160,215"/>
                 <polygon points="200,195 220,175 240,195 220,215"/>
                 <polygon points="260,195 280,175 300,195 280,215"/>
               </g>
-              <circle cx="115" cy="255" r="14" fill="#14213d"/><circle cx="285" cy="255" r="14" fill="#14213d"/>
-              <circle cx="115" cy="135" r="14" fill="#14213d"/><circle cx="285" cy="135" r="14" fill="#14213d"/>
+              <circle cx="115" cy="255" r="14" fill="#2a3340"/><circle cx="285" cy="255" r="14" fill="#2a3340"/>
+              <circle cx="115" cy="135" r="14" fill="#2a3340"/><circle cx="285" cy="135" r="14" fill="#2a3340"/>
             </svg>
           </div>
           <div class="card-body">
@@ -257,14 +272,14 @@
         <article class="card" id="socks">
           <div class="card-media">
             <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for textile tube socks">
-              <rect width="400" height="400" fill="#faf6ef"/>
-              <path d="M140 40 H200 V300 Q200 360 150 360 Q110 360 110 310 V100 Q110 40 140 40Z" fill="#b3202a"/>
-              <path d="M210 40 H270 V300 Q270 360 220 360 Q180 360 180 310 V100 Q180 40 210 40Z" fill="#14213d"/>
-              <rect x="140" y="70" width="60" height="14" fill="#e9b20e"/>
-              <rect x="140" y="100" width="60" height="10" fill="#2d6a4f"/>
-              <rect x="210" y="70" width="60" height="14" fill="#e9b20e"/>
-              <rect x="210" y="100" width="60" height="10" fill="#b3202a"/>
-              <g stroke="#e9b20e" stroke-width="3" fill="none">
+              <rect width="400" height="400" fill="#faf7f5"/>
+              <path d="M140 40 H200 V300 Q200 360 150 360 Q110 360 110 310 V100 Q110 40 140 40Z" fill="#d46a8a"/>
+              <path d="M210 40 H270 V300 Q270 360 220 360 Q180 360 180 310 V100 Q180 40 210 40Z" fill="#5a9e78"/>
+              <rect x="140" y="70" width="60" height="14" fill="#e8c547"/>
+              <rect x="140" y="100" width="60" height="10" fill="#6b9fd4"/>
+              <rect x="210" y="70" width="60" height="14" fill="#e8c547"/>
+              <rect x="210" y="100" width="60" height="10" fill="#d45a5a"/>
+              <g stroke="#faf7f5" stroke-width="3" fill="none">
                 <path d="M155 160 L185 190 M185 160 L155 190"/>
                 <path d="M225 160 L255 190 M255 160 L225 190"/>
               </g>
@@ -286,16 +301,16 @@
         <article class="card" id="sweaters">
           <div class="card-media">
             <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for Christmas sweaters">
-              <rect width="400" height="400" fill="#b3202a"/>
-              <path d="M80 130 L130 110 L150 150 L250 150 L270 110 L320 130 L300 200 L300 330 L100 330 L100 200 Z" fill="#faf6ef"/>
-              <rect x="150" y="150" width="100" height="20" fill="#e9b20e"/>
-              <rect x="150" y="190" width="100" height="12" fill="#2d6a4f"/>
-              <rect x="150" y="220" width="100" height="12" fill="#14213d"/>
-              <g fill="#b3202a">
+              <rect width="400" height="400" fill="#d45a5a"/>
+              <path d="M80 130 L130 110 L150 150 L250 150 L270 110 L320 130 L300 200 L300 330 L100 330 L100 200 Z" fill="#faf7f5"/>
+              <rect x="150" y="150" width="100" height="20" fill="#e8c547"/>
+              <rect x="150" y="190" width="100" height="12" fill="#5a9e78"/>
+              <rect x="150" y="220" width="100" height="12" fill="#6b9fd4"/>
+              <g fill="#d46a8a">
                 <polygon points="200,250 220,290 180,290"/>
                 <polygon points="200,270 212,295 188,295"/>
               </g>
-              <circle cx="200" cy="248" r="6" fill="#e9b20e"/>
+              <circle cx="200" cy="248" r="6" fill="#e8c547"/>
             </svg>
           </div>
           <div class="card-body">
@@ -316,14 +331,14 @@
             <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for story scarves">
               <defs>
                 <linearGradient id="scarfGrad" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#e9b20e"/>
-                  <stop offset="45%" stop-color="#b3202a"/>
-                  <stop offset="100%" stop-color="#14213d"/>
+                  <stop offset="0%" stop-color="#f2b6c6"/>
+                  <stop offset="45%" stop-color="#5a9e78"/>
+                  <stop offset="100%" stop-color="#6b9fd4"/>
                 </linearGradient>
               </defs>
-              <rect width="400" height="400" fill="#f3ebdd"/>
+              <rect width="400" height="400" fill="#f8f4f0"/>
               <path d="M40 80 Q200 40 360 80 L340 320 Q200 360 60 320 Z" fill="url(#scarfGrad)"/>
-              <g fill="none" stroke="#faf6ef" stroke-width="3" opacity="0.85">
+              <g fill="none" stroke="#faf7f5" stroke-width="3" opacity="0.9">
                 <path d="M90 120 H310 M100 160 H300 M110 200 H290 M120 240 H280"/>
                 <polygon points="200,140 230,180 170,180"/>
                 <polygon points="200,220 250,280 150,280"/>
@@ -346,8 +361,8 @@
         <article class="card" id="family-scarves">
           <div class="card-media">
             <svg class="placeholder" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder pattern for family-tree scarves">
-              <rect width="400" height="400" fill="#14213d"/>
-              <g stroke="#e9b20e" stroke-width="4" fill="none">
+              <rect width="400" height="400" fill="#2a3340"/>
+              <g stroke="#b8d9c4" stroke-width="4" fill="none">
                 <path d="M200 60 V300"/>
                 <path d="M200 120 H120 V180"/>
                 <path d="M200 120 H280 V180"/>
@@ -356,7 +371,7 @@
                 <path d="M200 260 H140 V320"/>
                 <path d="M200 260 H260 V320"/>
               </g>
-              <g fill="#b3202a">
+              <g fill="#d46a8a">
                 <circle cx="200" cy="60" r="14"/>
                 <circle cx="120" cy="180" r="10"/>
                 <circle cx="280" cy="180" r="10"/>
@@ -365,7 +380,7 @@
                 <circle cx="140" cy="320" r="10"/>
                 <circle cx="260" cy="320" r="10"/>
               </g>
-              <circle cx="200" cy="60" r="5" fill="#e9b20e"/>
+              <circle cx="200" cy="60" r="5" fill="#e8c547"/>
             </svg>
           </div>
           <div class="card-body">
@@ -385,7 +400,7 @@
     <!-- ABOUT -->
     <section class="about" id="about">
       <div class="about-inner">
-        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#hi-mark-gold"></use></svg>
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#hi-mark-pink"></use></svg>
         <h2>Hi-Choppla</h2>
         <p>A SIVYIS brand from Akron, Ohio. We put paj ntaub patterns on things families actually use — to play with, to wear, to pass on.</p>
         <p>This page is a private working preview. Photos for the sticker book and BawPaw Ball are concept renders; other products use pattern placeholders until samples land.</p>
