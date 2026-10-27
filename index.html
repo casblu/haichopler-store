@@ -14,25 +14,27 @@
 <body>
   <!--
     Triangle + upward arrow mark.
-    Arrowhead fills the apex evenly (tip near triangle tip; wings use the upper triangle width).
+    Arrowhead fills the apex evenly (tip flush with triangle tip; wings use the upper triangle width).
     Pure vector — stays sharp at any scale. No raster logos.
   -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
     <!-- Light arrow on currentColor triangle (nav / dark-ish fills) -->
     <symbol id="hi-mark" viewBox="0 0 64 64" overflow="visible">
       <polygon points="32,3 61,59 3,59" fill="currentColor" />
-      <!-- Filled arrow occupying the top point -->
-      <path d="M32 3 L46 30 H38.5 V51 H25.5 V30 H18 Z" fill="#faf7f5" />
+      <path d="M32 3 L46 30 H38.5 V59 H25.5 V30 H18 Z" fill="#faf7f5" />
+      <polygon points="32,3 61,59 3,59" fill="none" stroke="#f2b6c6" stroke-width="2.5" stroke-linejoin="round" />
     </symbol>
     <!-- Soft green triangle + off-white arrow (about / light sections) -->
     <symbol id="hi-mark-soft" viewBox="0 0 64 64" overflow="visible">
       <polygon points="32,3 61,59 3,59" fill="#5a9e78" />
-      <path d="M32 3 L46 30 H38.5 V51 H25.5 V30 H18 Z" fill="#faf7f5" />
+      <path d="M32 3 L46 30 H38.5 V59 H25.5 V30 H18 Z" fill="#faf7f5" />
+      <polygon points="32,3 61,59 3,59" fill="none" stroke="#f2b6c6" stroke-width="2.5" stroke-linejoin="round" />
     </symbol>
     <!-- Pink accent variant -->
     <symbol id="hi-mark-pink" viewBox="0 0 64 64" overflow="visible">
       <polygon points="32,3 61,59 3,59" fill="#d46a8a" />
-      <path d="M32 3 L46 30 H38.5 V51 H25.5 V30 H18 Z" fill="#faf7f5" />
+      <path d="M32 3 L46 30 H38.5 V59 H25.5 V30 H18 Z" fill="#faf7f5" />
+      <polygon points="32,3 61,59 3,59" fill="none" stroke="#faf7f5" stroke-width="2.5" stroke-linejoin="round" />
     </symbol>
   </svg>
 
@@ -68,9 +70,9 @@
           <g clip-path="url(#triClip)">
             <polygon points="60,6 114,112 6,112" fill="url(#textileGeom)" opacity="0.55" />
           </g>
-          <polygon points="60,6 114,112 6,112" fill="none" stroke="#f2b6c6" stroke-width="3.5" />
-          <!-- Arrow fills the apex evenly -->
-          <path d="M60 6 L82.4 50 H72 V90 H48 V50 H37.6 Z" fill="#faf7f5" />
+          <!-- Arrow tip flush with apex; shaft flush with base -->
+          <path d="M60 6 L82.4 50 H72 V112 H48 V50 H37.6 Z" fill="#faf7f5" />
+          <polygon points="60,6 114,112 6,112" fill="none" stroke="#f2b6c6" stroke-width="3.5" stroke-linejoin="round" />
         </svg>
         <h1>HI CHOPPLER</h1>
         <p class="hero-tag">Hmong products, made to play and pass on.</p>
@@ -131,7 +133,8 @@
           <div class="mask-expand">
             <svg class="mask-mark" viewBox="0 0 64 64" aria-hidden="true" shape-rendering="geometricPrecision">
               <polygon points="32,3 61,59 3,59" fill="#2a3340" />
-              <path d="M32 3 L46 30 H38.5 V51 H25.5 V30 H18 Z" fill="#faf7f5" />
+              <path d="M32 3 L46 30 H38.5 V59 H25.5 V30 H18 Z" fill="#faf7f5" />
+              <polygon points="32,3 61,59 3,59" fill="none" stroke="#f2b6c6" stroke-width="2.5" stroke-linejoin="round" />
             </svg>
           </div>
           <div class="mask-copy">
