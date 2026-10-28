@@ -4,8 +4,9 @@
   <defs>
     <clipPath id="triClip"><polygon points="60,6 114,112 6,112"/></clipPath>
   </defs>
-  <g clip-path="url(#triClip)">
-    <image href="../img/logo-textile.jpg" xlink:href="../img/logo-textile.jpg" x="6" y="6" width="108" height="106" preserveAspectRatio="xMidYMid slice"/>
+  <polygon points="60,6 114,112 6,112" fill="#1a1a1a"/>
+  <g clip-path="url(#triClip)" opacity="0.85">
+    <image href="../img/logo-textile-dark.jpg" xlink:href="../img/logo-textile-dark.jpg" x="6" y="6" width="108" height="106" preserveAspectRatio="xMidYMid slice"/>
   </g>
   <path d="M60 6 L82.4 50 H72 V112 H48 V50 H37.6 Z" fill="#5a9e78"/>
   <polygon points="60,6 114,112 6,112" fill="none" stroke="#f2b6c6" stroke-width="3.5" stroke-linejoin="round"/>

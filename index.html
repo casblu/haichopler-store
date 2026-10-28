@@ -15,30 +15,33 @@
   <!--
     Triangle + upward arrow mark.
     Arrowhead fills the apex evenly (tip flush with triangle tip; wings use the upper triangle width).
-    Triangle fill is real paj ntaub textile (img/logo-textile.jpg); arrow + pink border stay vector.
+    Triangle fill is real paj ntaub textile (img/logo-textile-dark.jpg); arrow + pink border stay vector.
   -->
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none" aria-hidden="true">
     <defs>
-      <!-- Shared paj ntaub textile fill (from christmas.jpg / logo-textile.jpg) -->
+      <!-- Shared paj ntaub textile fill (from christmas.jpg / logo-textile-dark.jpg) -->
       <pattern id="pajNtaubFill" patternContentUnits="objectBoundingBox" width="1" height="1">
-        <image href="img/logo-textile.jpg" xlink:href="img/logo-textile.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
+        <image href="img/logo-textile-dark.jpg" xlink:href="img/logo-textile-dark.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
       </pattern>
     </defs>
     <!-- Green arrow + textile triangle (nav) -->
     <symbol id="hi-mark" viewBox="0 0 64 64" overflow="visible">
-      <polygon points="32,3 61,59 3,59" fill="url(#pajNtaubFill)" />
+      <polygon points="32,3 61,59 3,59" fill="#1a1a1a" />
+      <polygon points="32,3 61,59 3,59" fill="url(#pajNtaubFill)" opacity="0.85" />
       <path d="M32 3 L46 30 H38.5 V59 H25.5 V30 H18 Z" fill="#5a9e78" />
       <polygon points="32,3 61,59 3,59" fill="none" stroke="#f2b6c6" stroke-width="2.5" stroke-linejoin="round" />
     </symbol>
     <!-- Textile triangle + green arrow (about / light sections) -->
     <symbol id="hi-mark-soft" viewBox="0 0 64 64" overflow="visible">
-      <polygon points="32,3 61,59 3,59" fill="url(#pajNtaubFill)" />
+      <polygon points="32,3 61,59 3,59" fill="#1a1a1a" />
+      <polygon points="32,3 61,59 3,59" fill="url(#pajNtaubFill)" opacity="0.85" />
       <path d="M32 3 L46 30 H38.5 V59 H25.5 V30 H18 Z" fill="#5a9e78" />
       <polygon points="32,3 61,59 3,59" fill="none" stroke="#f2b6c6" stroke-width="2.5" stroke-linejoin="round" />
     </symbol>
     <!-- Accent: textile triangle + green arrow, pink border -->
     <symbol id="hi-mark-pink" viewBox="0 0 64 64" overflow="visible">
-      <polygon points="32,3 61,59 3,59" fill="url(#pajNtaubFill)" />
+      <polygon points="32,3 61,59 3,59" fill="#1a1a1a" />
+      <polygon points="32,3 61,59 3,59" fill="url(#pajNtaubFill)" opacity="0.85" />
       <path d="M32 3 L46 30 H38.5 V59 H25.5 V30 H18 Z" fill="#5a9e78" />
       <polygon points="32,3 61,59 3,59" fill="none" stroke="#f2b6c6" stroke-width="2.5" stroke-linejoin="round" />
     </symbol>
@@ -67,9 +70,10 @@
           <defs>
             <clipPath id="triClip"><polygon points="60,6 114,112 6,112" /></clipPath>
           </defs>
-          <!-- Real paj ntaub textile clipped inside the triangle (no solid black underlay) -->
-          <g clip-path="url(#triClip)">
-            <image href="img/logo-textile.jpg" xlink:href="img/logo-textile.jpg" x="6" y="6" width="108" height="106" preserveAspectRatio="xMidYMid slice" />
+          <!-- Real paj ntaub textile clipped inside the triangle over solid black underlay, darkened -->
+          <polygon points="60,6 114,112 6,112" fill="#1a1a1a"/>
+          <g clip-path="url(#triClip)" opacity="0.85">
+            <image href="img/logo-textile-dark.jpg" xlink:href="img/logo-textile-dark.jpg" x="6" y="6" width="108" height="106" preserveAspectRatio="xMidYMid slice" />
           </g>
           <!-- Arrow tip flush with apex; shaft flush with base -->
           <path d="M60 6 L82.4 50 H72 V112 H48 V50 H37.6 Z" fill="#5a9e78" />
@@ -136,8 +140,9 @@
               <defs>
                 <clipPath id="maskTriClip"><polygon points="32,3 61,59 3,59" /></clipPath>
               </defs>
-              <g clip-path="url(#maskTriClip)">
-                <image href="img/logo-textile.jpg" xlink:href="img/logo-textile.jpg" x="3" y="3" width="58" height="56" preserveAspectRatio="xMidYMid slice" />
+              <polygon points="32,3 61,59 3,59" fill="#1a1a1a"/>
+              <g clip-path="url(#maskTriClip)" opacity="0.85">
+                <image href="img/logo-textile-dark.jpg" xlink:href="img/logo-textile-dark.jpg" x="3" y="3" width="58" height="56" preserveAspectRatio="xMidYMid slice" />
               </g>
               <path d="M32 3 L46 30 H38.5 V59 H25.5 V30 H18 Z" fill="#5a9e78" />
               <polygon points="32,3 61,59 3,59" fill="none" stroke="#f2b6c6" stroke-width="2.5" stroke-linejoin="round" />
