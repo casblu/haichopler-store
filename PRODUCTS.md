@@ -1,5 +1,6 @@
-# Haichopler product tracker
-Updated: 2026-10-27 20:00 EDT (America/New_York) · Owner: Armuro + Haichopler bot · Design gate: Txai
+# Haichoppler product tracker
+Brand spelling: **Haichoppler** (H-A-I-C-H-O-P-P-L-E-R, two Ps). GitHub Pages slug remains `haichopler-store` (one P).
+Updated: 2026-10-27 21:40 EDT (America/New_York) · Owner: Armuro + Haichoppler bot · Design gate: Txai
 
 | Product | Status | Next ops step (no design needed) | Blocked on Txai (design/spend) |
 |---|---|---|---|

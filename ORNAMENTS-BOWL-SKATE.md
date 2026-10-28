@@ -43,7 +43,7 @@ Updated: 2026-10-26 (America/New_York) · Prefer US makers · Design/spend block
 
 ## 3. Skateboards
 
-**Product intent:** Graphic decks with Haichopler / Hmong textile language. Deck graphics blocked on Txai.
+**Product intent:** Graphic decks with Haichoppler / Hmong textile language. Deck graphics blocked on Txai.
 
 **Maker types to pursue next (not contacted):**
 | Type | Example / lead | Notes |
