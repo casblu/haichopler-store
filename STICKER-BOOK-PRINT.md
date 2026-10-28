@@ -12,7 +12,7 @@ Local art pages (examples): `/workspace` sticker-book PDFs via Drive (`00-PAGE-P
 
 - Activity / sticker **book** (multi-page booklet with kiss-cut or perforated vinyl/paper stickers), not loose die-cut sheets only  
 - Short-run US print for launch (tens–low hundreds) + optional POD for ongoing D2C  
-- Full-color interior + cover; Hi Choppler branding; cultural motif accuracy (Txai design gate)
+- Full-color interior + cover; Haichopler branding; cultural motif accuracy (Txai design gate)
 
 ---
 

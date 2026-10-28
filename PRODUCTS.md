@@ -1,5 +1,5 @@
-# Hi Choppler product tracker
-Updated: 2026-10-27 19:55 EDT (America/New_York) · Owner: Armuro + Hi Choppler bot · Design gate: Txai
+# Haichopler product tracker
+Updated: 2026-10-27 20:00 EDT (America/New_York) · Owner: Armuro + Haichopler bot · Design gate: Txai
 
 | Product | Status | Next ops step (no design needed) | Blocked on Txai (design/spend) |
 |---|---|---|---|
@@ -15,7 +15,7 @@ Updated: 2026-10-27 19:55 EDT (America/New_York) · Owner: Armuro + Hi Choppler 
 | Hmong textile skirts | Coming soon · US shortlist + draft RFQ ready | Txai pick silhouette/maker + approve send (`RFQ-TEXTILE-SKIRTS.md`) | Silhouette, length, motif accuracy, pricing |
 | Women’s beanies (purple + B&W wrap stripe) | Coming soon · US shortlist + draft RFQ ready | Txai cultural/accuracy lock + maker pick (`RFQ-WOMENS-BEANIES.md`) | Stripe placement, purple shade, cuff, pricing; not ceremonial replica |
 
-Store: https://casblu.github.io/hi-choppla-store/  
+Store: https://casblu.github.io/haichopler-store/  
 Store shows **ten** product cards (story + family-tree share one **Scarves** card).  
 Rules: advance ops freely; never finalize aesthetics or spend without Txai.  
 **Hard rule:** no emails, forms, calls, or DMs to makers — research + draft files only until Txai says send.

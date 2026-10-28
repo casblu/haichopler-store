@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="512" height="512">
+  <rect width="120" height="120" fill="#faf7f5"/>
+  <polygon points="60,6 114,112 6,112" fill="#1a1a1a"/>
+  <!-- ARCHIVE: tip below apex (pre-flush) -->
+  <path d="M60 14 L84 50 H72 V90 H48 V50 H36 Z" fill="#5a9e78"/>
+  <polygon points="60,6 114,112 6,112" fill="none" stroke="#f2b6c6" stroke-width="3.5" stroke-linejoin="round"/>
+</svg>

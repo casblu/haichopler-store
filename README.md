@@ -1,8 +1,8 @@
-# Hi Choppler storefront (preview)
+# Haichopler storefront (preview)
 
-Unlisted GitHub Pages preview of the Hi Choppler brand + shop site.
+Unlisted GitHub Pages preview of the Haichopler brand + shop site.
 
-**Live:** https://casblu.github.io/hi-choppla-store/
+**Live:** https://casblu.github.io/haichopler-store/
 
 Scroll-craft brand site with all current products. Not marketed — open the URL to view on phone or desktop.
 

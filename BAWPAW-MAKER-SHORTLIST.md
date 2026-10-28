@@ -1,6 +1,6 @@
 # BawPaw Ball — US maker shortlist
 Updated: 2026-10-26 (America/New_York) · Research only — **no RFQs sent, no orders, no payments**  
-Product: Hi Choppler BawPaw Ball (pov pob) under SIVYIS Corp  
+Product: Haichopler BawPaw Ball (pov pob) under SIVYIS Corp  
 Spec reminder: ~7.5 cm Ø · 120–150 g (target 130 g) · 6 or 8 sewn panels (12 optional) · dye-sub duck canvas **or** poly faux suede · HDPE/PP resin pellets in sealed inner bag · paj ntaub motif panels (artwork TBD — Txai design gate) · retail ~$16 / pair $28 · ages 14+ for v1
 
 Sources checked: public websites + production plan `/workspace/hiluss-plan/plan.html` (Oct 23). Prices/MOQs are public listings and **must be re-confirmed by quote**.
@@ -15,7 +15,7 @@ Sources checked: public websites + production plan `/workspace/hiluss-plan/plan.
 | 2 | **Bullseye Cornhole** | Cincinnati, OH | Ohio manufacture; custom print on existing bag lines; clear contact; ACO-grade construction (ask for round/panel adaptation) |
 | 3 | **West Georgia Cornhole** | Villa Rica, GA | Best national material match: dye-sub duck canvas + all-weather resin; also sells **sew-yourself dye-sub panel sheets** (fast local-sew path) |
 
-Draft RFQs: `/workspace/hi-choppla-store/rfq-drafts/` (also copied to bot store).
+Draft RFQs: `/workspace/haichopler-store/rfq-drafts/` (also copied to bot store).
 
 ---
 
@@ -112,4 +112,4 @@ Use these for **advisor intros + micro sew capacity**, not as primary industrial
 ---
 
 ## Secondary: Found Surface (Christmas knits)
-See `/workspace/hi-choppla-store/rfq-drafts/FOUND-SURFACE-CHRISTMAS-KNIT-NOTE.md` — Cleveland jacquard knitter; stub RFQ only; does not block BawPaw Ball.
+See `/workspace/haichopler-store/rfq-drafts/FOUND-SURFACE-CHRISTMAS-KNIT-NOTE.md` — Cleveland jacquard knitter; stub RFQ only; does not block BawPaw Ball.
