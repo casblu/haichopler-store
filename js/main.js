@@ -10,35 +10,24 @@
   }
   window.hiNotify = notify;
 
-  var tees = window.HI_TEES || [];
-  var teeDialog = document.getElementById("tee-dialog");
-  var teeGrid = document.getElementById("tee-grid");
-  var teeHeading = document.getElementById("t-shirts");
-  var teeClosingFromHash = false;
+  var collections = [];
 
-  function teeHashId() {
+  function collectionHashId() {
     return decodeURIComponent((location.hash || "").replace(/^#/, ""));
   }
 
-  function teeById(id) {
-    for (var i = 0; i < tees.length; i++) {
-      if (tees[i].id === id) return tees[i];
-    }
-    return null;
-  }
-
-  function teeCard(tee) {
+  function collectionCard(item, mediaClass) {
     var article = document.createElement("article");
     article.className = "card";
-    article.id = tee.id;
+    article.id = item.id;
 
     var media = document.createElement("div");
-    media.className = "card-media";
+    media.className = mediaClass || "card-media";
     var photo = document.createElement("img");
-    photo.src = tee.image;
-    photo.alt = tee.imageAlt;
-    photo.width = 1024;
-    photo.height = 1024;
+    photo.src = item.image;
+    photo.alt = item.imageAlt;
+    photo.width = item.width || 1024;
+    photo.height = item.height || 1024;
     photo.loading = "lazy";
     media.appendChild(photo);
 
@@ -50,10 +39,10 @@
     tag.textContent = "Coming soon";
 
     var title = document.createElement("h3");
-    title.textContent = tee.title;
+    title.textContent = item.title;
 
     var copy = document.createElement("p");
-    copy.textContent = tee.description;
+    copy.textContent = item.description;
 
     var form = document.createElement("form");
     form.className = "notify";
@@ -83,23 +72,34 @@
     return article;
   }
 
-  function renderTeeShop() {
-    if (!teeHeading || !teeGrid || !tees.length) return;
+  function mountCollection(opts) {
+    var items = opts.items || [];
+    var dialog = document.getElementById(opts.dialogId);
+    var grid = document.getElementById(opts.gridId);
+    if (!dialog || !grid || !items.length) return;
+
+    function byId(id) {
+      for (var i = 0; i < items.length; i++) {
+        if (items[i].id === id) return items[i];
+      }
+      return null;
+    }
 
     var card = document.createElement("article");
     card.className = "card";
+    if (opts.cardId) card.id = opts.cardId;
     var link = document.createElement("a");
     link.className = "tee-open";
-    link.href = "#hmong-leaders";
+    link.href = "#" + opts.collectionId;
 
     var media = document.createElement("div");
-    media.className = "card-media tee-cover";
-    tees.forEach(function (tee) {
+    media.className = "card-media tee-cover" + (opts.coverClass ? " " + opts.coverClass : "");
+    items.forEach(function (item) {
       var img = document.createElement("img");
-      img.src = tee.image;
-      img.alt = tee.title;
-      img.width = 1024;
-      img.height = 1024;
+      img.src = item.image;
+      img.alt = item.title;
+      img.width = item.width || 1024;
+      img.height = item.height || 1024;
       media.appendChild(img);
     });
 
@@ -107,14 +107,14 @@
     body.className = "card-body";
     var tag = document.createElement("span");
     tag.className = "tag";
-    tag.textContent = tees.length === 1 ? "1 tee" : tees.length + " tees";
+    tag.textContent = items.length + " " + (items.length === 1 ? opts.noun : opts.nounPlural);
     var title = document.createElement("h3");
-    title.textContent = "Hmong Leaders & Heroes";
+    title.textContent = opts.title;
     var copy = document.createElement("p");
-    copy.textContent = "Black tees of Hmong leaders and heroes — portraits set in paj ntaub.";
+    copy.textContent = opts.blurb;
     var view = document.createElement("span");
     view.className = "tee-view";
-    view.textContent = "View tees";
+    view.textContent = opts.viewLabel;
     body.appendChild(tag);
     body.appendChild(title);
     body.appendChild(copy);
@@ -122,48 +122,94 @@
     link.appendChild(media);
     link.appendChild(body);
     card.appendChild(link);
-    teeHeading.insertAdjacentElement("afterend", card);
 
-    tees.forEach(function (tee) {
-      teeGrid.appendChild(teeCard(tee));
-    });
-  }
-
-  function syncTeeHash() {
-    if (!teeDialog) return;
-    var id = teeHashId();
-    var open = id === "hmong-leaders" || !!teeById(id);
-    if (open) {
-      if (!teeDialog.open) teeDialog.showModal();
-      var target = document.getElementById(id);
-      if (target && teeById(id)) {
-        target.scrollIntoView({ block: "start" });
-      } else {
-        teeDialog.scrollTop = 0;
-      }
-    } else if (teeDialog.open) {
-      teeClosingFromHash = true;
-      teeDialog.close();
-      teeClosingFromHash = false;
+    if (opts.replaceId) {
+      var slot = document.getElementById(opts.replaceId);
+      if (slot) slot.replaceWith(card);
+    } else if (opts.afterId) {
+      var heading = document.getElementById(opts.afterId);
+      if (heading) heading.insertAdjacentElement("afterend", card);
     }
-  }
 
-  renderTeeShop();
-  if (teeDialog) {
-    teeDialog.addEventListener("close", function () {
-      if (teeClosingFromHash) return;
-      var id = teeHashId();
-      if (id === "hmong-leaders" || teeById(id)) {
-        history.replaceState(null, "", "#t-shirts");
+    items.forEach(function (item) {
+      grid.appendChild(collectionCard(item, opts.mediaClass));
+    });
+
+    var set = {
+      dialog: dialog,
+      collectionId: opts.collectionId,
+      returnHash: opts.returnHash,
+      byId: byId,
+      closingFromHash: false
+    };
+
+    dialog.addEventListener("close", function () {
+      if (set.closingFromHash) return;
+      var id = collectionHashId();
+      if (id === set.collectionId || set.byId(id)) {
+        history.replaceState(null, "", "#" + set.returnHash);
       }
     });
-    teeDialog.addEventListener("click", function (event) {
-      if (event.target === teeDialog) teeDialog.close();
+    dialog.addEventListener("click", function (event) {
+      if (event.target === dialog) dialog.close();
     });
-    var closeBtn = teeDialog.querySelector("[data-tee-close]");
-    if (closeBtn) closeBtn.addEventListener("click", function () { teeDialog.close(); });
-    window.addEventListener("hashchange", syncTeeHash);
-    syncTeeHash();
+    var closeBtn = dialog.querySelector("[data-collection-close]");
+    if (closeBtn) closeBtn.addEventListener("click", function () { dialog.close(); });
+
+    collections.push(set);
+  }
+
+  function syncCollections() {
+    var id = collectionHashId();
+    collections.forEach(function (set) {
+      var open = id === set.collectionId || !!set.byId(id);
+      if (open) {
+        if (!set.dialog.open) set.dialog.showModal();
+        var target = document.getElementById(id);
+        if (target && set.byId(id)) target.scrollIntoView({ block: "start" });
+        else set.dialog.scrollTop = 0;
+      } else if (set.dialog.open) {
+        set.closingFromHash = true;
+        set.dialog.close();
+        set.closingFromHash = false;
+      }
+    });
+  }
+
+  mountCollection({
+    items: window.HI_TEES || [],
+    dialogId: "tee-dialog",
+    gridId: "tee-grid",
+    afterId: "t-shirts",
+    collectionId: "hmong-leaders",
+    returnHash: "t-shirts",
+    title: "Hmong Leaders & Heroes",
+    blurb: "Black tees of Hmong leaders and heroes — portraits set in paj ntaub.",
+    noun: "tee",
+    nounPlural: "tees",
+    viewLabel: "View tees"
+  });
+
+  mountCollection({
+    items: window.HI_DECKS || [],
+    dialogId: "deck-dialog",
+    gridId: "deck-grid",
+    replaceId: "skate",
+    cardId: "skate",
+    collectionId: "skateboards",
+    returnHash: "skate",
+    title: "Skateboards",
+    blurb: "Decks wrapped in Hmong textile energy — rideable art with paj ntaub punch.",
+    noun: "deck",
+    nounPlural: "decks",
+    viewLabel: "View decks",
+    mediaClass: "card-media deck-shot",
+    coverClass: "deck-cover"
+  });
+
+  if (collections.length) {
+    window.addEventListener("hashchange", syncCollections);
+    syncCollections();
   }
 
   var nav = document.querySelector(".nav");

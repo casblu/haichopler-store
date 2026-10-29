@@ -11,7 +11,11 @@ Scroll-craft brand site with all current products. Not marketed — open the URL
 - BawPaw Ball
 - Felt ornaments
 - Bronze funeral bowl
-- Skateboards
+- Skateboards — one card; opens the deck list (`#skateboards`)
+  - Star & Heart Deck (`#star-heart-deck`)
+  - Elephant Foot Deck (`#elephant-foot-deck`)
+  - Snail Shell Deck (`#snail-shell-deck`)
+  - Ram's Head Deck (`#rams-head-deck`)
 - Textile tube socks
 - Christmas sweaters / sweatshirts
 - Story scarves
