@@ -17,6 +17,7 @@ Scroll-craft brand site with all current products. Not marketed — open the URL
 - Story scarves
 - Family-tree scarves
 - Paj Cai Tee (T-Shirts)
+- Lee Lue Tee (T-Shirts)
 
 ## Local
 Open `index.html` in a browser, or `python3 -m http.server 8765` from this folder.
