@@ -355,43 +355,21 @@
           </div>
         </article>
 
-        <!-- 11 T-Shirts -->
+        <!-- T-Shirts: one card. The set is filled from js/tees.js. -->
         <p class="shop-cat" id="t-shirts">T-Shirts</p>
-        <article class="card" id="paj-cai-tee">
-          <div class="card-media">
-            <img src="img/paj-cai-tee.jpg" alt="Black Paj Cai Tee with a gold paj ntaub triangle and a black-and-white portrait" width="1024" height="1024" loading="lazy" />
-          </div>
-          <div class="card-body">
-            <span class="tag soon">Coming soon</span>
-            <h3>Paj Cai Tee</h3>
-            <p>Black tee with a high-contrast portrait of a Hmong man — turban, silver neck ring, and chain — set in a triangle of gold paj ntaub.</p>
-            <img src="img/paj-cai-tee-art.jpg" alt="Flat artwork for the Paj Cai Tee: a Hmong man crouched down, posing toward the camera, inside a gold paj ntaub triangle" width="1024" height="1024" loading="lazy" style="border-radius:10px;margin-top:4px;aspect-ratio:1;object-fit:cover;height:auto" />
-            <form class="notify" onsubmit="return hiNotify(this)">
-              <input type="email" required placeholder="Notify me" autocomplete="email" />
-              <button type="submit">Notify</button>
-            </form>
-            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
-          </div>
-        </article>
-
-        <article class="card" id="lee-lue-tee">
-          <div class="card-media">
-            <img src="img/lee-lue-tee.jpg" alt="Black Lee Lue Tee with Major Lee Lue, arms crossed, inside a light-pink Hmong textile diamond" width="1024" height="1024" loading="lazy" />
-          </div>
-          <div class="card-body">
-            <span class="tag soon">Coming soon</span>
-            <h3>Lee Lue Tee</h3>
-            <p>Major Lee Lue, the Hmong T-28 pilot and war hero who flew over 5,000 combat missions in the Secret War in Laos, stands with his arms crossed inside a tall diamond of light-pink Hmong textile pattern.</p>
-            <img src="img/lee-lue-tee-art.jpg" alt="Flat artwork for the Lee Lue Tee: Major Lee Lue standing with arms crossed inside a tall light-pink Hmong textile diamond" width="1024" height="1024" loading="lazy" style="border-radius:10px;margin-top:4px;aspect-ratio:1;object-fit:cover;height:auto" />
-            <form class="notify" onsubmit="return hiNotify(this)">
-              <input type="email" required placeholder="Notify me" autocomplete="email" />
-              <button type="submit">Notify</button>
-            </form>
-            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
-          </div>
-        </article>
       </div>
     </section>
+
+    <dialog class="tee-dialog" id="tee-dialog" aria-labelledby="hmong-leaders">
+      <div class="tee-dialog-bar">
+        <div>
+          <h2 id="hmong-leaders">Hmong Leaders &amp; Heroes</h2>
+          <p>Black tees, coming soon. Leave an email on a shirt and we’ll nudge you when pre-orders open.</p>
+        </div>
+        <button type="button" class="tee-close" data-tee-close>Close</button>
+      </div>
+      <div class="grid" id="tee-grid"></div>
+    </dialog>
 
     <!-- ABOUT -->
     <section class="about" id="about">
@@ -414,6 +392,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/tees.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -15,11 +15,11 @@ Updated: 2026-10-29 · Owner: Armuro + Haichoppler bot · Design gate: Txai
 | Family-tree scarves (store: shared **Scarves** card) | Coming soon · same RFQ as story | Same as story scarves (`RFQ-SCARVES.md`) | Family-tree visual system |
 | Hmong textile skirts | Coming soon · US shortlist + draft RFQ ready | Txai pick silhouette/maker + approve send (`RFQ-TEXTILE-SKIRTS.md`) | Silhouette, length, motif accuracy, pricing |
 | Women’s beanies (purple + B&W wrap stripe) | Coming soon · US shortlist + draft RFQ ready | Txai cultural/accuracy lock + maker pick (`RFQ-WOMENS-BEANIES.md`) | Stripe placement, purple shade, cuff, pricing; not ceremonial replica |
-| Paj Cai Tee (T-Shirts) | Coming soon · store card, price TBD | None until Txai locks price / maker | Working title; mockup + flat art on the card |
-| Lee Lue Tee (T-Shirts) | Coming soon · store card, price TBD | None until Txai locks price / maker | Mockup + flat art on the card |
+| Paj Cai Tee (T-Shirts) | Coming soon · in the Hmong Leaders & Heroes set, price TBD | None until Txai locks price / maker | Working title; one entry in `js/tees.js` |
+| Lee Lue Tee (T-Shirts) | Coming soon · same set, price TBD | None until Txai locks price / maker | One entry in `js/tees.js` |
 
 Store: https://casblu.github.io/haichopler-store/  
-Store shows **twelve** product cards (story + family-tree share one **Scarves** card). T-Shirts: https://casblu.github.io/haichopler-store/#t-shirts · Paj Cai Tee: https://casblu.github.io/haichopler-store/#paj-cai-tee · Lee Lue Tee: https://casblu.github.io/haichopler-store/#lee-lue-tee  
+Store shows **twelve** products (story + family-tree share one **Scarves** card). The shop grid has one T-Shirts card; the set opens as Hmong Leaders & Heroes. T-Shirts: https://casblu.github.io/haichopler-store/#t-shirts · Set: https://casblu.github.io/haichopler-store/#hmong-leaders · Paj Cai Tee: https://casblu.github.io/haichopler-store/#paj-cai-tee · Lee Lue Tee: https://casblu.github.io/haichopler-store/#lee-lue-tee  
 Rules: advance ops freely; never finalize aesthetics or spend without Txai.  
 **Hard rule:** no emails, forms, calls, or DMs to makers — research + draft files only until Txai says send.
 
