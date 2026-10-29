@@ -1,6 +1,6 @@
 # Haichoppler product tracker
 Brand spelling: **Haichoppler** (H-A-I-C-H-O-P-P-L-E-R, two Ps). GitHub Pages slug remains `haichopler-store` (one P).
-Updated: 2026-10-27 21:40 EDT (America/New_York) · Owner: Armuro + Haichoppler bot · Design gate: Txai
+Updated: 2026-10-29 · Owner: Armuro + Haichoppler bot · Design gate: Txai
 
 | Product | Status | Next ops step (no design needed) | Blocked on Txai (design/spend) |
 |---|---|---|---|
@@ -15,9 +15,10 @@ Updated: 2026-10-27 21:40 EDT (America/New_York) · Owner: Armuro + Haichoppler 
 | Family-tree scarves (store: shared **Scarves** card) | Coming soon · same RFQ as story | Same as story scarves (`RFQ-SCARVES.md`) | Family-tree visual system |
 | Hmong textile skirts | Coming soon · US shortlist + draft RFQ ready | Txai pick silhouette/maker + approve send (`RFQ-TEXTILE-SKIRTS.md`) | Silhouette, length, motif accuracy, pricing |
 | Women’s beanies (purple + B&W wrap stripe) | Coming soon · US shortlist + draft RFQ ready | Txai cultural/accuracy lock + maker pick (`RFQ-WOMENS-BEANIES.md`) | Stripe placement, purple shade, cuff, pricing; not ceremonial replica |
+| Paj Cai Tee (T-Shirts) | Coming soon · store card, price TBD | None until Txai locks price / maker | Working title; mockup + flat art on the card |
 
 Store: https://casblu.github.io/haichopler-store/  
-Store shows **ten** product cards (story + family-tree share one **Scarves** card).  
+Store shows **eleven** product cards (story + family-tree share one **Scarves** card). T-Shirts: https://casblu.github.io/haichopler-store/#t-shirts · Paj Cai Tee: https://casblu.github.io/haichopler-store/#paj-cai-tee  
 Rules: advance ops freely; never finalize aesthetics or spend without Txai.  
 **Hard rule:** no emails, forms, calls, or DMs to makers — research + draft files only until Txai says send.
 
