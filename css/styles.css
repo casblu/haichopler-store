@@ -485,14 +485,6 @@ button, input { font: inherit; }
   color: #fff;
   font-weight: 700;
 }
-.card-art {
-  border-radius: 10px;
-  margin-top: 4px;
-  aspect-ratio: 1;
-  object-fit: cover;
-  height: auto;
-  width: 100%;
-}
 .tee-dialog {
   width: min(1100px, calc(100% - 28px));
   max-height: calc(100dvh - 28px);
