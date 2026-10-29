@@ -55,14 +55,6 @@
     var copy = document.createElement("p");
     copy.textContent = tee.description;
 
-    var art = document.createElement("img");
-    art.className = "card-art";
-    art.src = tee.art;
-    art.alt = tee.artAlt;
-    art.width = 1024;
-    art.height = 1024;
-    art.loading = "lazy";
-
     var form = document.createElement("form");
     form.className = "notify";
     form.setAttribute("onsubmit", "return hiNotify(this)");
@@ -84,7 +76,6 @@
     body.appendChild(tag);
     body.appendChild(title);
     body.appendChild(copy);
-    body.appendChild(art);
     body.appendChild(form);
     body.appendChild(ok);
     article.appendChild(media);
