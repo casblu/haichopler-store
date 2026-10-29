@@ -10,6 +10,171 @@
   }
   window.hiNotify = notify;
 
+  var tees = window.HI_TEES || [];
+  var teeDialog = document.getElementById("tee-dialog");
+  var teeGrid = document.getElementById("tee-grid");
+  var teeHeading = document.getElementById("t-shirts");
+  var teeClosingFromHash = false;
+
+  function teeHashId() {
+    return decodeURIComponent((location.hash || "").replace(/^#/, ""));
+  }
+
+  function teeById(id) {
+    for (var i = 0; i < tees.length; i++) {
+      if (tees[i].id === id) return tees[i];
+    }
+    return null;
+  }
+
+  function teeCard(tee) {
+    var article = document.createElement("article");
+    article.className = "card";
+    article.id = tee.id;
+
+    var media = document.createElement("div");
+    media.className = "card-media";
+    var photo = document.createElement("img");
+    photo.src = tee.image;
+    photo.alt = tee.imageAlt;
+    photo.width = 1024;
+    photo.height = 1024;
+    photo.loading = "lazy";
+    media.appendChild(photo);
+
+    var body = document.createElement("div");
+    body.className = "card-body";
+
+    var tag = document.createElement("span");
+    tag.className = "tag soon";
+    tag.textContent = "Coming soon";
+
+    var title = document.createElement("h3");
+    title.textContent = tee.title;
+
+    var copy = document.createElement("p");
+    copy.textContent = tee.description;
+
+    var art = document.createElement("img");
+    art.className = "card-art";
+    art.src = tee.art;
+    art.alt = tee.artAlt;
+    art.width = 1024;
+    art.height = 1024;
+    art.loading = "lazy";
+
+    var form = document.createElement("form");
+    form.className = "notify";
+    form.setAttribute("onsubmit", "return hiNotify(this)");
+    var input = document.createElement("input");
+    input.type = "email";
+    input.required = true;
+    input.placeholder = "Notify me";
+    input.autocomplete = "email";
+    var button = document.createElement("button");
+    button.type = "submit";
+    button.textContent = "Notify";
+    form.appendChild(input);
+    form.appendChild(button);
+
+    var ok = document.createElement("div");
+    ok.className = "ok";
+    ok.textContent = "You’re on the list (preview only — nothing sent yet).";
+
+    body.appendChild(tag);
+    body.appendChild(title);
+    body.appendChild(copy);
+    body.appendChild(art);
+    body.appendChild(form);
+    body.appendChild(ok);
+    article.appendChild(media);
+    article.appendChild(body);
+    return article;
+  }
+
+  function renderTeeShop() {
+    if (!teeHeading || !teeGrid || !tees.length) return;
+
+    var card = document.createElement("article");
+    card.className = "card";
+    var link = document.createElement("a");
+    link.className = "tee-open";
+    link.href = "#hmong-leaders";
+
+    var media = document.createElement("div");
+    media.className = "card-media tee-cover";
+    tees.forEach(function (tee) {
+      var img = document.createElement("img");
+      img.src = tee.image;
+      img.alt = tee.title;
+      img.width = 1024;
+      img.height = 1024;
+      media.appendChild(img);
+    });
+
+    var body = document.createElement("div");
+    body.className = "card-body";
+    var tag = document.createElement("span");
+    tag.className = "tag";
+    tag.textContent = tees.length === 1 ? "1 tee" : tees.length + " tees";
+    var title = document.createElement("h3");
+    title.textContent = "Hmong Leaders & Heroes";
+    var copy = document.createElement("p");
+    copy.textContent = "Black tees of Hmong leaders and heroes — portraits set in paj ntaub.";
+    var view = document.createElement("span");
+    view.className = "tee-view";
+    view.textContent = "View tees";
+    body.appendChild(tag);
+    body.appendChild(title);
+    body.appendChild(copy);
+    body.appendChild(view);
+    link.appendChild(media);
+    link.appendChild(body);
+    card.appendChild(link);
+    teeHeading.insertAdjacentElement("afterend", card);
+
+    tees.forEach(function (tee) {
+      teeGrid.appendChild(teeCard(tee));
+    });
+  }
+
+  function syncTeeHash() {
+    if (!teeDialog) return;
+    var id = teeHashId();
+    var open = id === "hmong-leaders" || !!teeById(id);
+    if (open) {
+      if (!teeDialog.open) teeDialog.showModal();
+      var target = document.getElementById(id);
+      if (target && teeById(id)) {
+        target.scrollIntoView({ block: "start" });
+      } else {
+        teeDialog.scrollTop = 0;
+      }
+    } else if (teeDialog.open) {
+      teeClosingFromHash = true;
+      teeDialog.close();
+      teeClosingFromHash = false;
+    }
+  }
+
+  renderTeeShop();
+  if (teeDialog) {
+    teeDialog.addEventListener("close", function () {
+      if (teeClosingFromHash) return;
+      var id = teeHashId();
+      if (id === "hmong-leaders" || teeById(id)) {
+        history.replaceState(null, "", "#t-shirts");
+      }
+    });
+    teeDialog.addEventListener("click", function (event) {
+      if (event.target === teeDialog) teeDialog.close();
+    });
+    var closeBtn = teeDialog.querySelector("[data-tee-close]");
+    if (closeBtn) closeBtn.addEventListener("click", function () { teeDialog.close(); });
+    window.addEventListener("hashchange", syncTeeHash);
+    syncTeeHash();
+  }
+
   var nav = document.querySelector(".nav");
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -164,7 +329,7 @@
   }
 
   // Subtle card fade-ins
-  gsap.utils.toArray(".card").forEach(function (card, i) {
+  gsap.utils.toArray(".shop > .grid > .card").forEach(function (card, i) {
     gsap.from(card, {
       y: 40,
       opacity: 0,

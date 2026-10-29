@@ -456,6 +456,106 @@ button, input { font: inherit; }
   height: 100%;
   object-fit: cover;
 }
+.card-media.tee-cover {
+  display: flex;
+  gap: 3px;
+  background: var(--offwhite-2);
+}
+.card-media.tee-cover img {
+  flex: 1 1 0;
+  width: 0;
+  min-width: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.tee-open {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: inherit;
+  text-decoration: none;
+}
+.tee-view {
+  align-self: flex-start;
+  margin-top: 8px;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: var(--pink-deep);
+  color: #fff;
+  font-weight: 700;
+}
+.card-art {
+  border-radius: 10px;
+  margin-top: 4px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+.tee-dialog {
+  width: min(1100px, calc(100% - 28px));
+  max-height: calc(100dvh - 28px);
+  margin: auto;
+  padding: 0 0 8px;
+  border: 0;
+  border-radius: 18px;
+  background: var(--offwhite);
+  color: var(--ink);
+  box-shadow: 0 24px 80px rgba(42, 51, 64, 0.28);
+  overflow: auto;
+}
+.tee-dialog::backdrop {
+  background: rgba(42, 51, 64, 0.55);
+}
+.tee-dialog-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 22px 12px;
+  background: var(--offwhite);
+}
+.tee-dialog-bar h2 {
+  margin: 0;
+  font-family: "Barlow Condensed", Anton, Impact, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--green-deep);
+}
+.tee-dialog-bar p {
+  margin: 8px 0 0;
+  max-width: 36em;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.tee-close {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: var(--ink);
+  color: var(--offwhite);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tee-dialog .grid {
+  padding: 8px 22px 22px;
+}
+.tee-dialog .card {
+  scroll-margin-top: 96px;
+}
+@media (max-width: 640px) {
+  .tee-dialog-bar { align-items: stretch; flex-direction: column; }
+  .tee-close { align-self: flex-start; }
+}
 .card-media .placeholder {
   width: 100%;
   height: 100%;
