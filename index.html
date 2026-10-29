@@ -150,7 +150,7 @@
           <div class="mask-copy">
             <div>
               <h2>Culture you can hold</h2>
-              <p>Twelve products on the board. Design-vault photos on most cards — samples and finals still coming.</p>
+              <p>Fifteen products on the board. Design-vault photos on most cards — samples and finals still coming.</p>
             </div>
           </div>
         </div>
@@ -243,22 +243,8 @@
           </div>
         </article>
 
-        <!-- 5 Skateboards -->
-        <article class="card" id="skate">
-          <div class="card-media">
-            <img src="img/skate.jpg" alt="Hmong paj ntaub skateboard deck graphic" width="1400" height="1400" loading="lazy" />
-          </div>
-          <div class="card-body">
-            <span class="tag soon">Coming soon</span>
-            <h3>Skateboards</h3>
-            <p>Decks wrapped in Hmong textile energy — rideable art with paj ntaub punch.</p>
-            <form class="notify" onsubmit="return hiNotify(this)">
-              <input type="email" required placeholder="Notify me" autocomplete="email" />
-              <button type="submit">Notify</button>
-            </form>
-            <div class="ok">You’re on the list (preview only — nothing sent yet).</div>
-          </div>
-        </article>
+        <!-- Skateboards: one card. The decks are filled from js/decks.js. -->
+        <article class="card" id="skate"></article>
 
         <!-- 6 Tube socks -->
         <article class="card" id="socks">
@@ -366,9 +352,20 @@
           <h2 id="hmong-leaders">Hmong Leaders &amp; Heroes</h2>
           <p>Black tees, coming soon. Leave an email on a shirt and we’ll nudge you when pre-orders open.</p>
         </div>
-        <button type="button" class="tee-close" data-tee-close>Close</button>
+        <button type="button" class="tee-close" data-collection-close>Close</button>
       </div>
       <div class="grid" id="tee-grid"></div>
+    </dialog>
+
+    <dialog class="tee-dialog" id="deck-dialog" aria-labelledby="skateboards">
+      <div class="tee-dialog-bar">
+        <div>
+          <h2 id="skateboards">Skateboards</h2>
+          <p>Coming soon. Leave an email on a deck and we’ll nudge you when pre-orders open.</p>
+        </div>
+        <button type="button" class="tee-close" data-collection-close>Close</button>
+      </div>
+      <div class="grid" id="deck-grid"></div>
     </dialog>
 
     <!-- ABOUT -->
@@ -393,6 +390,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="js/tees.js"></script>
+  <script src="js/decks.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

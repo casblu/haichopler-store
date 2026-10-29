@@ -8,7 +8,10 @@ Updated: 2026-10-29 · Owner: Armuro + Haichoppler bot · Design gate: Txai
 | BawPaw Ball | Priority · concept + store ($16) · 6-maker US shortlist + 3 draft RFQs ready | Txai approve send of RFQ #1 True Cornhole (Albany, OH) with artwork-to-follow; then Bullseye → West Georgia (`BAWPAW-MAKER-SHORTLIST.md`, `rfq-drafts/`) | Maker pick, price, qty, panel art |
 | Felt ornaments | Coming soon · maker-type notes done | After motif lock: draft RFQ to US felt/ornament shops (`ORNAMENTS-BOWL-SKATE.md`) | Motif set / colorways |
 | Bronze funeral bowl | Coming soon · foundry-type notes done | After ceremonial design: draft RFQ Hildebran + East Point | Ceremonial design approval |
-| Skateboards | Coming soon · deck shop notes done | After graphics: draft RFQ Woodchuck + CustomSkateboards (5–25) | Graphic decks |
+| Star & Heart Deck (Skateboards) | Coming soon · store card, price TBD | After the set locks: draft RFQ Woodchuck + CustomSkateboards (`ORNAMENTS-BOWL-SKATE.md`) | One entry in `js/decks.js` |
+| Elephant Foot Deck (Skateboards) | Coming soon · store card, price TBD | Same skate RFQ | One entry in `js/decks.js` |
+| Snail Shell Deck (Skateboards) | Coming soon · store card, price TBD | Same skate RFQ | One entry in `js/decks.js` |
+| Ram's Head Deck (Skateboards) | Coming soon · store card, price TBD | Same skate RFQ | One entry in `js/decks.js` |
 | Textile tube socks | Coming soon · US shortlist + draft RFQ ready | Txai pick maker + approve send (`RFQ-TUBE-SOCKS.md`) | Paj ntaub pattern accuracy |
 | Christmas sweaters/sweatshirts | Coming soon · Found Surface draft RFQ ready | Txai approve Found Surface send / Studio account (`RFQ-FOUND-SURFACE-XMAS.md`) | Jacquard / embroidery art |
 | Story scarves (store: shared **Scarves** card) | Coming soon · shared scarf RFQ ready | Txai approve partner pick + send (`RFQ-SCARVES.md`) | Story art + layout |
@@ -19,7 +22,7 @@ Updated: 2026-10-29 · Owner: Armuro + Haichoppler bot · Design gate: Txai
 | Lee Lue Tee (T-Shirts) | Coming soon · same set, price TBD | None until Txai locks price / maker | One entry in `js/tees.js` |
 
 Store: https://casblu.github.io/haichopler-store/  
-Store shows **twelve** products (story + family-tree share one **Scarves** card). The shop grid has one T-Shirts card; the set opens as Hmong Leaders & Heroes. T-Shirts: https://casblu.github.io/haichopler-store/#t-shirts · Set: https://casblu.github.io/haichopler-store/#hmong-leaders · Paj Cai Tee: https://casblu.github.io/haichopler-store/#paj-cai-tee · Lee Lue Tee: https://casblu.github.io/haichopler-store/#lee-lue-tee  
+Store shows **fifteen** products (story + family-tree share one **Scarves** card). The shop grid has one T-Shirts card and one Skateboards card. T-Shirts: https://casblu.github.io/haichopler-store/#t-shirts · Hmong Leaders & Heroes: https://casblu.github.io/haichopler-store/#hmong-leaders · Skateboards: https://casblu.github.io/haichopler-store/#skateboards · Decks: https://casblu.github.io/haichopler-store/#star-heart-deck · https://casblu.github.io/haichopler-store/#elephant-foot-deck · https://casblu.github.io/haichopler-store/#snail-shell-deck · https://casblu.github.io/haichopler-store/#rams-head-deck  
 Rules: advance ops freely; never finalize aesthetics or spend without Txai.  
 **Hard rule:** no emails, forms, calls, or DMs to makers — research + draft files only until Txai says send.
 
