@@ -16,146 +16,97 @@
     return decodeURIComponent((location.hash || "").replace(/^#/, ""));
   }
 
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  /* One image per media box: either an <img> or an inline placeholder svg, never both. */
+  function mediaFor(src, cls) {
+    var media = el("div", "card-media" + (cls ? " " + cls : ""));
+    if (src.svg) {
+      media.innerHTML = src.svg;
+    } else if (src.image) {
+      var img = document.createElement("img");
+      img.src = src.image;
+      img.alt = src.imageAlt || src.title || "";
+      img.width = src.width || 1024;
+      img.height = src.height || 1024;
+      img.loading = "lazy";
+      media.appendChild(img);
+    }
+    return media;
+  }
+
   function collectionCard(item, mediaClass) {
-    var article = document.createElement("article");
-    article.className = "card";
+    var article = el("article", "card");
     article.id = item.id;
-
-    var media = document.createElement("div");
-    media.className = mediaClass || "card-media";
-    var photo = document.createElement("img");
-    photo.src = item.image;
-    photo.alt = item.imageAlt;
-    photo.width = item.width || 1024;
-    photo.height = item.height || 1024;
-    photo.loading = "lazy";
-    media.appendChild(photo);
-
-    var body = document.createElement("div");
-    body.className = "card-body";
-
-    var tag = document.createElement("span");
-    tag.className = "tag soon";
-    tag.textContent = "Coming soon";
-
-    var title = document.createElement("h3");
-    title.textContent = item.title;
-
-    var copy = document.createElement("p");
-    copy.textContent = item.description;
-
-    var form = document.createElement("form");
-    form.className = "notify";
+    var body = el("div", "card-body");
+    body.appendChild(el("span", "tag " + (item.tagClass != null ? item.tagClass : "soon"), item.tag || "Coming soon"));
+    body.appendChild(el("h3", null, item.title));
+    var copy = el("p"); copy.innerHTML = item.description; body.appendChild(copy);
+    var form = el("form", "notify");
     form.setAttribute("onsubmit", "return hiNotify(this)");
     var input = document.createElement("input");
-    input.type = "email";
-    input.required = true;
-    input.placeholder = "Notify me";
-    input.autocomplete = "email";
-    var button = document.createElement("button");
-    button.type = "submit";
-    button.textContent = "Notify";
-    form.appendChild(input);
-    form.appendChild(button);
-
-    var ok = document.createElement("div");
-    ok.className = "ok";
-    ok.textContent = "You’re on the list (preview only — nothing sent yet).";
-
-    body.appendChild(tag);
-    body.appendChild(title);
-    body.appendChild(copy);
+    input.type = "email"; input.required = true; input.placeholder = "Notify me"; input.autocomplete = "email";
+    var button = el("button", null, "Notify"); button.type = "submit";
+    form.appendChild(input); form.appendChild(button);
     body.appendChild(form);
-    body.appendChild(ok);
-    article.appendChild(media);
+    body.appendChild(el("div", "ok", "You’re on the list (preview only — nothing sent yet)."));
+    article.appendChild(mediaFor(item, mediaClass));
     article.appendChild(body);
     return article;
   }
 
-  function mountCollection(opts) {
-    var items = opts.items || [];
-    var dialog = document.getElementById(opts.dialogId);
-    var grid = document.getElementById(opts.gridId);
-    if (!dialog || !grid || !items.length) return;
-
+  function mountCategory(cat, shopGrid, dialogs) {
+    var items = cat.items || (cat.itemsVar && window[cat.itemsVar]) || [];
+    if (!items.length) return;
     function byId(id) {
-      for (var i = 0; i < items.length; i++) {
-        if (items[i].id === id) return items[i];
-      }
+      for (var i = 0; i < items.length; i++) if (items[i].id === id) return items[i];
       return null;
     }
 
-    var card = document.createElement("article");
-    card.className = "card";
-    if (opts.cardId) card.id = opts.cardId;
-    var link = document.createElement("a");
-    link.className = "tee-open";
-    link.href = "#" + opts.collectionId;
+    var dialog = el("dialog", "tee-dialog");
+    dialog.id = cat.listId + "-dialog";
+    var bar = el("div", "tee-dialog-bar");
+    var head = el("div");
+    var h2 = el("h2", null, cat.listTitle || cat.title);
+    h2.id = cat.listId;
+    dialog.setAttribute("aria-labelledby", cat.listId);
+    head.appendChild(h2);
+    head.appendChild(el("p", null, cat.intro || "Leave an email on a product and we’ll nudge you when pre-orders open."));
+    var closeBtn = el("button", "tee-close", "Close"); closeBtn.type = "button";
+    bar.appendChild(head); bar.appendChild(closeBtn);
+    var grid = el("div", "grid");
+    items.forEach(function (item) { grid.appendChild(collectionCard(item, cat.mediaClass)); });
+    dialog.appendChild(bar); dialog.appendChild(grid);
+    dialogs.appendChild(dialog);
 
-    var media = document.createElement("div");
-    media.className = "card-media tee-cover" + (opts.coverClass ? " " + opts.coverClass : "");
-    items.forEach(function (item) {
-      var img = document.createElement("img");
-      img.src = item.image;
-      img.alt = item.title;
-      img.width = item.width || 1024;
-      img.height = item.height || 1024;
-      media.appendChild(img);
-    });
-
-    var body = document.createElement("div");
-    body.className = "card-body";
-    var tag = document.createElement("span");
-    tag.className = "tag";
-    tag.textContent = items.length + " " + (items.length === 1 ? opts.noun : opts.nounPlural);
-    var title = document.createElement("h3");
-    title.textContent = opts.title;
-    var copy = document.createElement("p");
-    copy.textContent = opts.blurb;
-    var view = document.createElement("span");
-    view.className = "tee-view";
-    view.textContent = opts.viewLabel;
-    body.appendChild(tag);
-    body.appendChild(title);
-    body.appendChild(copy);
-    body.appendChild(view);
-    link.appendChild(media);
+    var card = el("article", "card");
+    card.id = cat.cardId;
+    var link = el("a", "tee-open");
+    link.href = "#" + cat.listId;
+    var coverSrc = cat.cover || items[0];
+    link.appendChild(mediaFor({ image: coverSrc.image, svg: coverSrc.svg, imageAlt: cat.title, width: coverSrc.width, height: coverSrc.height }, cat.mediaClass));
+    var body = el("div", "card-body");
+    body.appendChild(el("span", "tag", items.length + " " + (items.length === 1 ? cat.noun : cat.nounPlural)));
+    body.appendChild(el("h3", null, cat.title));
+    body.appendChild(el("p", null, cat.blurb));
+    body.appendChild(el("span", "tee-view", cat.viewLabel || "View"));
     link.appendChild(body);
     card.appendChild(link);
+    shopGrid.appendChild(card);
 
-    if (opts.replaceId) {
-      var slot = document.getElementById(opts.replaceId);
-      if (slot) slot.replaceWith(card);
-    } else if (opts.afterId) {
-      var heading = document.getElementById(opts.afterId);
-      if (heading) heading.insertAdjacentElement("afterend", card);
-    }
-
-    items.forEach(function (item) {
-      grid.appendChild(collectionCard(item, opts.mediaClass));
-    });
-
-    var set = {
-      dialog: dialog,
-      collectionId: opts.collectionId,
-      returnHash: opts.returnHash,
-      byId: byId,
-      closingFromHash: false
-    };
-
+    var set = { dialog: dialog, collectionId: cat.listId, returnHash: cat.cardId, byId: byId, closingFromHash: false };
     dialog.addEventListener("close", function () {
       if (set.closingFromHash) return;
       var id = collectionHashId();
-      if (id === set.collectionId || set.byId(id)) {
-        history.replaceState(null, "", "#" + set.returnHash);
-      }
+      if (id === set.collectionId || set.byId(id)) history.replaceState(null, "", "#" + set.returnHash);
     });
-    dialog.addEventListener("click", function (event) {
-      if (event.target === dialog) dialog.close();
-    });
-    var closeBtn = dialog.querySelector("[data-collection-close]");
-    if (closeBtn) closeBtn.addEventListener("click", function () { dialog.close(); });
-
+    dialog.addEventListener("click", function (event) { if (event.target === dialog) dialog.close(); });
+    closeBtn.addEventListener("click", function () { dialog.close(); });
     collections.push(set);
   }
 
@@ -176,36 +127,14 @@
     });
   }
 
-  mountCollection({
-    items: window.HI_TEES || [],
-    dialogId: "tee-dialog",
-    gridId: "tee-grid",
-    afterId: "t-shirts",
-    collectionId: "hmong-leaders",
-    returnHash: "t-shirts",
-    title: "Hmong Leaders & Heroes",
-    blurb: "Black tees of Hmong leaders and heroes — portraits set in paj ntaub.",
-    noun: "tee",
-    nounPlural: "tees",
-    viewLabel: "View tees"
-  });
-
-  mountCollection({
-    items: window.HI_DECKS || [],
-    dialogId: "deck-dialog",
-    gridId: "deck-grid",
-    replaceId: "skate",
-    cardId: "skate",
-    collectionId: "skateboards",
-    returnHash: "skate",
-    title: "Skateboards",
-    blurb: "Decks wrapped in Hmong textile energy — rideable art with paj ntaub punch.",
-    noun: "deck",
-    nounPlural: "decks",
-    viewLabel: "View decks",
-    mediaClass: "card-media deck-shot",
-    coverClass: "deck-cover"
-  });
+  (function () {
+    var shopGrid = document.getElementById("shop-grid");
+    var dialogs = document.getElementById("category-dialogs");
+    if (!shopGrid || !dialogs) return;
+    (window.HI_CATALOG || []).forEach(function (cat) { mountCategory(cat, shopGrid, dialogs); });
+    var id = collectionHashId();
+    if (id) { var t = document.getElementById(id); if (t && !t.closest("dialog")) setTimeout(function () { t.scrollIntoView(); }, 0); }
+  })();
 
   if (collections.length) {
     window.addEventListener("hashchange", syncCollections);
