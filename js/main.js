@@ -87,7 +87,7 @@
     var card = el("article", "card");
     card.id = cat.cardId;
     var link = el("a", "tee-open");
-    link.href = "#" + cat.listId;
+    link.href = cat.href || ("#" + cat.listId);
     var coverSrc = cat.cover || items[0];
     link.appendChild(mediaFor({ image: coverSrc.image, svg: coverSrc.svg, imageAlt: cat.title, width: coverSrc.width, height: coverSrc.height }, cat.mediaClass));
     var body = el("div", "card-body");

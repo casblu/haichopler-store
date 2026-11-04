@@ -108,6 +108,8 @@ var HI_CATALOG = [
     "noun": "style",
     "nounPlural": "styles",
     "viewLabel": "View socks",
+    "href": "socks.html",
+    "cover": { "image": "img/socks/sock-08.jpg", "width": 1152, "height": 864 },
     "items": [
       {
         "image": "img/socks.jpg",

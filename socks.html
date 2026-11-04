@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Socks — Haichoppler</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+.sk{padding-top:var(--nav-h);background:var(--offwhite)}
+.sk-hero{position:relative;height:min(82vh,760px);overflow:hidden}
+.sk-hero img{width:100%;height:100%;object-fit:cover}
+.sk-hero .t{position:absolute;left:0;right:0;bottom:0;padding:48px 24px 36px;background:linear-gradient(transparent,rgba(20,20,20,.62));color:#fff}
+.sk-hero h1{font-family:"Barlow Condensed",sans-serif;font-size:clamp(44px,8vw,96px);margin:0;line-height:.95;letter-spacing:.5px}
+.sk-hero p{max-width:560px;margin:10px 0 0;font-size:17px}
+.sk-wrap{max-width:1240px;margin:0 auto;padding:56px 20px}
+.sk-intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.sk-intro h2,.sk-wrap h2{font-family:"Barlow Condensed",sans-serif;font-size:40px;margin:0 0 12px}
+.sk-intro p{color:var(--muted);font-size:17px}
+.sk-intro img{border-radius:6px}
+.sk-filter{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}
+.sk-filter button{border:1px solid rgba(42,51,64,.25);background:none;padding:8px 16px;border-radius:99px;cursor:pointer}
+.sk-filter button.on{background:var(--ink);color:#fff}
+.sk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:28px 20px}
+.sk-card img{aspect-ratio:4/5;object-fit:cover;object-position:50% 80%;width:100%;border-radius:6px;background:#eee;transition:transform .5s var(--ease)}
+.sk-card .m{overflow:hidden;border-radius:6px}
+.sk-card:hover img{transform:scale(1.03)}
+.sk-card h3{font-size:16px;margin:12px 0 4px;font-weight:600}
+.sk-card .f{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--pink-deep)}
+.sk-card p{font-size:14px;color:var(--muted);margin:4px 0 8px}
+.sw{display:flex;gap:6px}.sw i{width:16px;height:16px;border-radius:50%;border:1px solid rgba(0,0,0,.15)}
+.sk-band{background:var(--green);padding:56px 20px;text-align:center}
+.sk-band p{max-width:680px;margin:0 auto;font-size:18px}
+.sk-back{display:inline-block;margin-top:28px;font-weight:600}
+@media(max-width:760px){.sk-intro{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="nav is-scrolled" role="banner">
+  <a class="nav-brand" href="index.html#top">HAICHOPPLER</a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="index.html#shop">Shop</a><a href="#lookbook">Lookbook</a><a class="nav-cta" href="index.html#about">About</a><span class="nav-badge">Private</span>
+  </nav>
+</header>
+<main class="sk">
+  <section class="sk-hero"><img src="img/socks/sock-08.jpg" alt="Hmong paj ntaub pattern socks with black sneakers" />
+    <div class="t"><h1>Socks, stitched<br>with story.</h1><p>Paj ntaub patterns from Hmong textiles, knit for every day. Coming soon.</p></div></section>
+  <section class="sk-wrap sk-intro">
+    <div><h2>Paj ntaub, head to toe</h2>
+      <p>Paj ntaub (“flower cloth”) is the Hmong textile art of embroidery and reverse appliqué, built from diamonds, crosses, spirals and sawtooth borders. Our socks borrow those bands and rows.</p>
+      <p>The Spirit Gold and Paper Boat designs are drawn from joss paper, which is used in offerings and funerals. We’re still deciding with our community how to release them.</p></div>
+    <img src="img/socks/sock-20.jpg" alt="Three Hmong textile sock colorways laid flat" loading="lazy" />
+  </section>
+  <section class="sk-wrap" id="lookbook" style="padding-top:0">
+    <h2>The lookbook</h2>
+    <div class="sk-filter" id="skf"></div>
+    <div class="sk-grid" id="skg"></div>
+    <a class="sk-back" href="index.html#socks">← Back to the shop</a>
+  </section>
+  <section class="sk-band"><p>Every design is a preview. Leave an email on the main shop and we’ll tell you when pre-orders open.</p></section>
+</main>
+<footer class="footer">
+  <div class="private">Private preview — not released</div>
+  <div>© 2026 Haichoppler · Akron, Ohio</div>
+  <div style="margin-top:8px;opacity:0.7">No payments. Lookbook photos are concept renders.</div>
+  <div style="text-align:right;font-size:11px;opacity:0.5;margin-top:12px">A SIVYIS Corp brand</div>
+</footer>
+<script src="js/socks.js"></script>
+<script>
+(function(){var g=document.getElementById('skg'),f=document.getElementById('skf'),fams=['All','paj ntaub','joss paper','joss paper boats'];
+function draw(k){g.innerHTML='';HI_SOCKS.filter(function(s){return k==='All'||s.fam===k}).forEach(function(s){var a=document.createElement('article');a.className='sk-card';a.id='sock-'+s.n;
+var num=('0'+s.n).slice(-2);a.innerHTML='<div class="m"><img loading="lazy" src="img/socks/sock-'+num+'.jpg" alt="'+s.name+' socks"></div><div class="f">'+s.fam+'</div><h3>'+s.name+'</h3><p>'+s.note+'</p><div class="sw">'+s.c.map(function(c){return '<i style="background:'+c+'"></i>'}).join('')+'</div>';g.appendChild(a)})}
+fams.forEach(function(k,i){var b=document.createElement('button');b.textContent=k==='All'?'All':k.replace(/^./,function(c){return c.toUpperCase()});if(!i)b.className='on';b.onclick=function(){[].forEach.call(f.children,function(x){x.className=''});b.className='on';draw(k)};f.appendChild(b)});draw('All')})();
+</script>
+</body></html>

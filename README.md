@@ -16,7 +16,7 @@ Scroll-craft brand site with all current products. Not marketed — open the URL
   - Elephant Foot Deck (`#elephant-foot-deck`)
   - Snail Shell Deck (`#snail-shell-deck`)
   - Ram's Head Deck (`#rams-head-deck`)
-- Textile tube socks
+- Textile tube socks — card opens the socks lookbook page (`socks.html`, 27 photos)
 - Christmas sweaters / sweatshirts
 - Story scarves
 - Family-tree scarves
