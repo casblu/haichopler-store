@@ -28,7 +28,7 @@ Rules: advance ops freely; never finalize aesthetics or spend without Txai.
 **Hard rule:** no emails, forms, calls, or DMs to makers — research + draft files only until Txai says send.
 
 Draft pack (local + repo):  
-`RFQ-FOUND-SURFACE-XMAS.md` · `RFQ-TUBE-SOCKS.md` · `RFQ-SCARVES.md` · `RFQ-TEXTILE-SKIRTS.md` · `RFQ-WOMENS-BEANIES.md` · `ORNAMENTS-BOWL-SKATE.md` · `STICKER-BOOK-PRINT.md` · `rfq-drafts/RFQ-01-TrueCornhole.md`
+`RFQ-FOUND-SURFACE-XMAS.md` · `RFQ-TUBE-SOCKS.md` · `RFQ-SCARVES.md` · `RFQ-TEXTILE-SKIRTS.md` · `RFQ-WOMENS-BEANIES.md` · `ORNAMENTS-BOWL-SKATE.md` · `STICKER-BOOK-PRINT.md`
 
 **Store photos (2026-10-26):** Pulled from Txai’s Drive / local design mirrors — sticker book cover, clothing sticker sheet, BawPaw mockup, skate deck art, paj ntaub textures for ornaments/scarves/socks/christmas/skirts refs. Bronze funeral bowl + women’s beanies use SVG pattern placeholders (no finished photos in Drive). Not final sample photography.
 
