@@ -1,6 +1,6 @@
 # Haichoppler product tracker
 Brand spelling: **Haichoppler** (H-A-I-C-H-O-P-P-L-E-R, two Ps). GitHub Pages slug remains `haichopler-store` (one P).
-Updated: 2026-10-29 · Owner: Armuro + Haichoppler bot · Design gate: Txai
+Updated: 2026-11-05 · Owner: Armuro + Haichoppler bot · Design gate: Txai
 
 | Product | Status | Next ops step (no design needed) | Blocked on Txai (design/spend) |
 |---|---|---|---|
@@ -12,7 +12,7 @@ Updated: 2026-10-29 · Owner: Armuro + Haichoppler bot · Design gate: Txai
 | Elephant Foot Deck (Skateboards) | Coming soon · store card, price TBD | Same skate RFQ | One entry in `js/decks.js` |
 | Snail Shell Deck (Skateboards) | Coming soon · store card, price TBD | Same skate RFQ | One entry in `js/decks.js` |
 | Ram's Head Deck (Skateboards) | Coming soon · store card, price TBD | Same skate RFQ | One entry in `js/decks.js` |
-| Textile tube socks | Coming soon · US shortlist + draft RFQ ready | Txai pick maker + approve send (`RFQ-TUBE-SOCKS.md`) | Paj ntaub pattern accuracy |
+| Textile tube socks | Lookbook live (`socks.html`, 27 concept photos, filters, swatches) · US shortlist + draft RFQ ready | Txai pick maker + approve send (`RFQ-TUBE-SOCKS.md`); prefer Sock Club first | Paj ntaub pattern accuracy; Spirit Gold / Paper Boat community release call |
 | Christmas sweaters/sweatshirts | Coming soon · Found Surface draft RFQ ready | Txai approve Found Surface send / Studio account (`RFQ-FOUND-SURFACE-XMAS.md`) | Jacquard / embroidery art |
 | Story scarves (store: shared **Scarves** card) | Coming soon · shared scarf RFQ ready | Txai approve partner pick + send (`RFQ-SCARVES.md`) | Story art + layout |
 | Family-tree scarves (store: shared **Scarves** card) | Coming soon · same RFQ as story | Same as story scarves (`RFQ-SCARVES.md`) | Family-tree visual system |
@@ -22,11 +22,15 @@ Updated: 2026-10-29 · Owner: Armuro + Haichoppler bot · Design gate: Txai
 | Lee Lue Tee (T-Shirts) | Coming soon · same set, price TBD | None until Txai locks price / maker | One entry in `js/tees.js` |
 
 Store: https://casblu.github.io/haichopler-store/  
-Store shows **fifteen** products (story + family-tree share one **Scarves** card). The shop grid has one T-Shirts card and one Skateboards card. T-Shirts: https://casblu.github.io/haichopler-store/#t-shirts · Hmong Leaders & Heroes: https://casblu.github.io/haichopler-store/#hmong-leaders · Skateboards: https://casblu.github.io/haichopler-store/#skateboards · Decks: https://casblu.github.io/haichopler-store/#star-heart-deck · https://casblu.github.io/haichopler-store/#elephant-foot-deck · https://casblu.github.io/haichopler-store/#snail-shell-deck · https://casblu.github.io/haichopler-store/#rams-head-deck  
+Socks lookbook: https://casblu.github.io/haichopler-store/socks.html  
+Store shows **fifteen** products (story + family-tree share one **Scarves** card). The shop grid has one T-Shirts card and one Skateboards card. Socks card opens the lookbook page. T-Shirts: https://casblu.github.io/haichopler-store/#t-shirts · Hmong Leaders & Heroes: https://casblu.github.io/haichopler-store/#hmong-leaders · Skateboards: https://casblu.github.io/haichopler-store/#skateboards  
 Rules: advance ops freely; never finalize aesthetics or spend without Txai.  
 **Hard rule:** no emails, forms, calls, or DMs to makers — research + draft files only until Txai says send.
 
-Draft pack (local):  
-`RFQ-FOUND-SURFACE-XMAS.md` · `RFQ-TUBE-SOCKS.md` · `RFQ-SCARVES.md` · `RFQ-TEXTILE-SKIRTS.md` · `RFQ-WOMENS-BEANIES.md` · `ORNAMENTS-BOWL-SKATE.md` · `STICKER-BOOK-PRINT.md`
+Draft pack (local + repo):  
+`RFQ-FOUND-SURFACE-XMAS.md` · `RFQ-TUBE-SOCKS.md` · `RFQ-SCARVES.md` · `RFQ-TEXTILE-SKIRTS.md` · `RFQ-WOMENS-BEANIES.md` · `ORNAMENTS-BOWL-SKATE.md` · `STICKER-BOOK-PRINT.md` · `rfq-drafts/RFQ-01-TrueCornhole.md`
 
 **Store photos (2026-10-26):** Pulled from Txai’s Drive / local design mirrors — sticker book cover, clothing sticker sheet, BawPaw mockup, skate deck art, paj ntaub textures for ornaments/scarves/socks/christmas/skirts refs. Bronze funeral bowl + women’s beanies use SVG pattern placeholders (no finished photos in Drive). Not final sample photography.
+
+**2026-11-04:** Socks lookbook page shipped (27 concept renders, pattern names, color swatches, family filters). Still Coming soon / no preorder.
+**2026-11-05 ops:** Tracker synced to socks lookbook. Top outbound bottleneck unchanged: BawPaw Ball RFQ #1 True Cornhole awaiting Txai send yes.
